@@ -293,41 +293,6 @@ Digital Code Output
 
 ## 11. Repository Structure
 
-```
-OCCPSense/
-├── docs/
-│   ├── architecture/          # Block diagrams, signal flow charts
-│   ├── specifications/        # Chip spec matrix, pin list
-│   └── meeting_minutes/       # Design review notes
-├── behavioral_model/
-│   ├── sensor_bridge.py       # Capacitive bridge equation model
-│   ├── cds_frontend.py        # CDS front-end model
-│   ├── ota_model.py           # OTA behavioral model
-│   ├── sar_adc.py             # SAR ADC RTL skeleton (Python)
-│   └── full_chain_sim.py      # End-to-end: ΔC → digital code
-├── schematic/
-│   ├── ota/                   # Two-stage Miller OTA
-│   ├── comparator/            # SAR comparator
-│   ├── cdac/                  # Charge-redistribution DAC
-│   ├── sar_fsm/               # SAR finite state machine
-│   ├── spi/                   # SPI readout interface
-│   └── top_level/             # Full ASIC top-level integration
-├── layout/
-│   ├── ota/
-│   ├── comparator/
-│   ├── cdac/
-│   ├── bias/
-│   ├── digital/
-│   └── top_level/
-├── simulation/
-│   ├── corners/               # TT, SS, FF corner sims
-│   ├── monte_carlo/           # Mismatch Monte Carlo
-│   └── post_layout/           # PEX extracted simulations
-└── README.md
-```
-
----
-
 ## Contributing
 
 This project is being developed as part of the **2026 IEEE SSCS Open-Source Chipathon (Track B)**. Contributions, issue reports, and design reviews are welcome.
