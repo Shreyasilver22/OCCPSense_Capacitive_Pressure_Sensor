@@ -1,4 +1,4 @@
-# OCCPSense — OpenCardiac Capacitive Pressure Sensor
+# OCCPSense —  Capacitive Pressure Sensor
 
 > **Low-Power Mixed-Signal Readout Chain for Capacitive Sensor Interface**  
 > An ultra-low-power, self-calibrating **Capacitance-to-Digital Converter (CDC) Readout IC** targeting the **2026 SSCS Open-Source Chipathon (Track B)**  
@@ -24,7 +24,7 @@
 
 ## 1. Project Overview
 
-**OCCPSense** (OpenCardiac Capacitive Pressure Sensor) is a fully integrated mixed-signal ASIC designed to interface with an **external differential MEMS capacitive pressure sensor**. The architecture implements a low-noise analog front-end coupled with a **charge-redistribution Successive Approximation Register (SAR) ADC**, making it suitable for ultra-low-power biomedical and cardiac pressure monitoring applications.
+**OCCPSense** ( Capacitive Pressure Sensor) is a fully integrated mixed-signal ASIC designed to interface with an **external differential MEMS capacitive pressure sensor**. The architecture implements a low-noise analog front-end coupled with a **charge-redistribution Successive Approximation Register (SAR) ADC**, making it suitable for ultra-low-power biomedical and cardiac pressure monitoring applications.
 
 The design is built around:
 - **Switched-capacitor front-end** with Correlated Double Sampling (CDS) for noise rejection
