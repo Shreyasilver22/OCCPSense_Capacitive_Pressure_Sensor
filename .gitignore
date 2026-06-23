@@ -1,0 +1,29 @@
+# -----------------------------
+# Simulation & Verilog
+# -----------------------------
+*.vcd
+*.vvp
+*.out
+sim/tb_sar_ctrl
+sim/tb_spi_slave
+*.log
+*.jou
+*.pb
+
+# -----------------------------
+# Python
+# -----------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+
+# -----------------------------
+# OS & IDE Settings
+# -----------------------------
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
