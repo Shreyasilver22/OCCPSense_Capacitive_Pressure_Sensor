@@ -1,0 +1,68 @@
+==================================================
+CDAC BIT-WEIGHT SWEEP RESULTS
+==================================================
+Sweep type: positive differential CDAC steps
+For each bit k: bp[k] switches VCM to VDD bn[k] switches VCM to 0
+All other bottom plates stay at VCM
+Dummy caps bpd and bnd stay at VCM
+VDD = 3.3 V
+VCM = 1.65 V
+Unit cap uses cap_mim_2f0fF with WCU=5um and LCU=5um
+Approx Cu = 2 fF/um2 * 5um * 5um = 50 fF
+Approx total capacitance per side = 1024*50fF = 51.2 pF
+Sample turns OFF at 5 ns
+CDAC bottom plates switch at 6 ns
+CDAC step measured at 7 ns
+Comparator CLK rises at 8 ns
+Comparator output measured at 10 ns
+pass_weight = 1 if CDAC step error is less than 10 percent
+pass_comp = 1 if comparator output has correct positive polarity
+==================================================
+columns: BIT expected_step measured_step abs_error rel_error_percent vdiff_before vdiff_after vcp_5p5 vcn_5p5 vcp_7 vcn_7 cm_7 voutp_10 voutn_10 outdiff_10 pass_weight pass_comp iavg_0_10ns pavg_0_10ns
+==================================================
+9 1.65 1.6467 0.0033029 0.200176 0 1.6467 1.6511 1.6511 2.47445 0.827755 1.6511 3.3 -2.93761E-08 3.3 1 1 1.00629E-05 3.32074E-05
+8 0.825 0.823354 0.001646 0.199515 0 0.823354 1.6511 1.6511 2.06278 1.23942 1.6511 3.3 2.63081E-09 3.3 1 1 9.78503E-06 3.22906E-05
+7 0.4125 0.411678 0.000822 0.199273 0 0.411678 1.6511 1.6511 1.85694 1.44526 1.6511 3.3 3.30637E-09 3.3 1 1 7.37258E-06 2.43295E-05
+6 0.20625 0.205839 0.000411 0.199273 0 0.205839 1.6511 1.6511 1.75402 1.54818 1.6511 3.3 4.89712E-09 3.3 1 1 1.69448E-07 5.59177E-07
+5 0.103125 0.102919 0.000206 0.199758 0 0.102919 1.6511 1.6511 1.70256 1.59964 1.6511 3.3 7.38352E-09 3.3 1 1 -5.46201E-06 1.80246E-05
+4 0.0515625 0.05146 0.0001025 0.198788 0 0.05146 1.6511 1.6511 1.67683 1.62537 1.6511 3.3 1.13489E-08 3.3 1 1 -1.18139E-05 3.89857E-05
+3 0.0257813 0.02573 5.125E-05 0.198788 0 0.02573 1.6511 1.6511 1.66397 1.63824 1.6511 3.3 1.78616E-08 3.3 1 1 -1.89218E-05 6.24419E-05
+2 0.0128906 0.012865 2.5625E-05 0.198788 0 0.012865 1.6511 1.6511 1.65753 1.64467 1.6511 3.3 2.8575E-08 3.3 1 1 -2.64173E-05 8.71772E-05
+1 0.00644531 0.006433 1.23125E-05 0.19103 0 0.006433 1.6511 1.6511 1.65432 1.64789 1.6511 3.3 4.62456E-08 3.3 1 1 -3.41127E-05 0.000112572
+0 0.00322266 0.003216 6.65625E-06 0.206545 0 0.003216 1.6511 1.6511 1.65271 1.64949 1.6511 3.3 7.54473E-08 3.3 1 1 -4.19093E-05 0.000138301
+==================================================
+END OF CDAC BIT-WEIGHT SWEEP
+Expected ideal positive steps:
+bit9 1.650000000 V
+bit8 0.825000000 V
+bit7 0.412500000 V
+bit6 0.206250000 V
+bit5 0.103125000 V
+bit4 0.051562500 V
+bit3 0.025781250 V
+bit2 0.012890625 V
+bit1 0.0064453125 V
+bit0 0.00322265625 V
+==================================================
+==================================================
+SMALL-DIFFERENTIAL SAMPLER + COMPARATOR TEST
+==================================================
+Purpose: verify TG sampler plus PDK-MIM CDAC plus StrongARM comparator at small input differential
+All CDAC bottom plates stay at VCM no DAC switching step
+VDIFF positive means ainp greater than ainn expected Voutp high and Voutn low
+VDIFF negative means ainp less than ainn expected Voutp low and Voutn high
+Half-LSB differential target = 3.3/2048 = 1.611328125 mV
+sample ON measured at 4.5ns hold measured at 7ns comparator output measured at 10ns
+==================================================
+columns: CASE VDIFF_SET expected_sign sample_4p5 sample_5p5 clk_7 clk_8p5 ainp_4p5 ainn_4p5 vcp_4p5 vcn_4p5 track_err_p track_err_n vcp_7 vcn_7 vdiff_hold cm_hold voutp_10 voutn_10 outdiff_10 pass_sign iavg_0_10ns pavg_0_10ns
+==================================================
+POS_HALF_LSB 0.001611328125 +1 3.3 0 0 3.3 1.65081 1.64919 1.65081 1.64919 0 0 1.65191 1.65029 0.001616 1.6511 3.3 1.23327E-07 3.3 1 -4.96998E-05 0.000164009
+NEG_HALF_LSB -0.001611328125 -1 3.3 0 0 3.3 1.64919 1.65081 1.64919 1.65081 0 0 1.65029 1.65191 -0.001616 1.6511 1.23327E-07 3.3 -3.3 1 -4.96998E-05 0.000164009
+ZERO 0 0 3.3 0 0 3.3 1.65 1.65 1.65 1.65 0 0 1.6511 1.6511 0 1.6511 3.53714 3.53714 2E-06 9 -0.000185066 0.000610717
+==================================================
+END OF SMALL-DIFFERENTIAL SAMPLER + COMPARATOR TEST
+PASS_SIGN: 1 correct 0 wrong 9 zero-diff not graded
+Expected POS_HALF_LSB: vdiff_hold positive Voutp high Voutn low
+Expected NEG_HALF_LSB: vdiff_hold negative Voutp low Voutn high
+ZERO is observation only
+==================================================

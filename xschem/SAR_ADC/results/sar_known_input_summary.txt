@@ -1,0 +1,31 @@
+==================================================
+SAR ADC KNOWN INPUT FULL TRANSIENT DEBUG
+==================================================
+VDIFF_PARAM = 0.001611328125
+final_time = 1.55E-06
+valid_seen = 1
+sample_rise = 1.41711E-07
+sample_fall = 2.01244E-07
+valid_rise = 1.42054E-06
+comp_clk_edges = 3.04146E-07 4.2405E-07 5.44038E-07 6.64031E-07 7.84024E-07 9.04015E-07 1.02402E-06 1.14402E-06 1.26401E-06 1.384E-06
+ainp_final = 1.65081
+ainn_final = 1.64919
+vdiff_input_final = 0.001612
+vcp_final = 1.65558
+vcn_final = 0.00891366
+vdiff_cdac_final = 1.64667
+Voutp_final = 3.3
+Voutn_final = -0.126174
+final_adc_code = 0
+final_code_bits_C9_to_C0 = 0 0 0 0 0 0 0 0 0 0
+==================================================
+Files generated:
+sar_known_input_full.raw
+sar_ts_ctrl.txt
+sar_ts_analog.txt
+sar_ts_code.txt
+sar_ts_dbp.txt
+sar_ts_dbn.txt
+sar_ts_bp.txt
+sar_ts_bn.txt
+==================================================
