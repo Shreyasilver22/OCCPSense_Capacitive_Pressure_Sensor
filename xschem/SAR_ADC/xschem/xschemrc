@@ -1,0 +1,4 @@
+set PDK_ROOT /foss/pdks
+set PDK gf180mcuD
+
+source $PDK_ROOT/$PDK/libs.tech/xschem/xschemrc
