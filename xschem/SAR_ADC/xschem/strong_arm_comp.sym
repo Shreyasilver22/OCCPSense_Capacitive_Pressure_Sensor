@@ -1,0 +1,37 @@
+v {xschem version=3.4.5 file_version=1.2
+}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 -130 -40 130 -40 {}
+L 4 -130 40 130 40 {}
+L 4 -130 -40 -130 40 {}
+L 4 130 -40 130 40 {}
+L 4 130 -20 150 -20 {}
+L 4 -150 -20 -130 -20 {}
+L 4 130 20 150 20 {}
+L 4 -150 0 -130 0 {}
+L 4 -150 20 -130 20 {}
+L 7 0 -60 0 -40 {}
+L 7 0 40 0 60 {}
+B 5 147.5 -22.5 152.5 -17.5 {name=Voutn dir=out}
+B 5 -152.5 -22.5 -147.5 -17.5 {name=Vinn dir=in}
+B 5 147.5 17.5 152.5 22.5 {name=Voutp dir=out}
+B 5 -152.5 -2.5 -147.5 2.5 {name=Vinp dir=in}
+B 5 -2.5 -62.5 2.5 -57.5 {name=vdd dir=inout}
+B 5 -2.5 57.5 2.5 62.5 {name=vss dir=inout}
+B 5 -152.5 17.5 -147.5 22.5 {name=CLK dir=in}
+T {Strong Arm Latch 
+Comparator} -65.5 -16 0 0 0.3 0.3 {}
+T {Voutn} 125 -24 0 1 0.2 0.2 {}
+T {Vinn} -125 -24 0 0 0.2 0.2 {}
+T {Voutp} 125 16 0 1 0.2 0.2 {}
+T {Vinp} -125 -4 0 0 0.2 0.2 {}
+T {vdd} 15 -34 0 1 0.2 0.2 {}
+T {vss} 15 26 0 1 0.2 0.2 {}
+T {CLK} -125 16 0 0 0.2 0.2 {}
