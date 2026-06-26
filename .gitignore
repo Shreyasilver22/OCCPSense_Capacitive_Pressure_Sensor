@@ -4,8 +4,8 @@
 *.vcd
 *.vvp
 *.out
-sim/tb_sar_ctrl
-sim/tb_spi_slave
+sim/tb_*
+!sim/tb_*.v
 *.log
 *.jou
 *.pb
