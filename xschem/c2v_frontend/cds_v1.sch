@@ -144,10 +144,10 @@ C {vsource.sym} -505 530 1 0 {name=V_VBIAS1 value=0.6638 savecurrent=false}
 C {lab_pin.sym} -475 530 2 0 {name=p26 sig_type=std_logic lab=Vbias_out}
 C {vsource.sym} -700 505 3 0 {name=Vdd value=3.3 savecurrent=false}
 C {vsource.sym} -705 570 3 0 {name=Vss value=-3.3 savecurrent=false}
-C {lab_pin.sym} 220 -50 1 0 {name=p27 sig_type=std_logic lab=Vdd}
+C {lab_pin.sym} 220 -50 1 0 {name=p27 sig_type=std_logic lab=opvdd}
 C {lab_pin.sym} 220 70 3 0 {name=p29 sig_type=std_logic lab=Vss}
 C {lab_pin.sym} -735 570 0 0 {name=p30 sig_type=std_logic lab=Vss}
-C {lab_pin.sym} -730 505 0 0 {name=p31 sig_type=std_logic lab=Vdd}
+C {lab_pin.sym} -730 505 0 0 {name=p31 sig_type=std_logic lab=opvdd}
 C {vsource.sym} -1265 500 3 0 {name=V5 value="PULSE( 0 3.3 2.5us 1ns 1ns 2us 5us  ) " savecurrent=false}
 C {lab_pin.sym} -290 -330 1 0 {name=p32 sig_type=std_logic lab=phi2in
 
@@ -184,6 +184,8 @@ value="
 .lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice mimcap_typical
 
 .include /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/spice/gf180mcu_fd_io.spice
+.options rshunt=1e12 reltol=1e-3 abstol=1e-12
+
 "}
 C {lab_pin.sym} 370 40 2 0 {name=p36 sig_type=std_logic lab=CDOUT}
 C {lab_pin.sym} -730 -280 2 0 {name=p5 sig_type=std_logic lab=Phi1bar}

@@ -1,0 +1,30 @@
+# ============================================================
+# SAR FSM RTL -> GF180 gate Verilog + SPICE
+# For Yosys 0.9: use Liberty as cell library info
+# ============================================================
+
+read_liberty -lib /home/ttuser/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib
+
+read_verilog -sv sar_fsm.v
+read_verilog -sv sar_fsm_wrapper.v
+
+hierarchy -check -top sar_fsm_wrapper
+
+proc
+opt
+fsm
+opt
+memory
+opt
+techmap
+opt
+
+dfflibmap -liberty /home/ttuser/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib
+
+abc -liberty /home/ttuser/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib
+
+clean
+check
+
+write_verilog -noattr -noexpr sar_fsm_gate.v
+write_spice -top sar_fsm_wrapper -big_endian -pos VDD -neg VSS sar_fsm_gate.spice

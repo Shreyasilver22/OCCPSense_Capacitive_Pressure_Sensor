@@ -1,0 +1,23 @@
+=============================================
+GF180MCU StrongARM comparator schematic test
+=============================================
+.
+---- Nominal transient result ----
+VDIFF = 10e-3 V
+Voutp_4ns = 3.3 V
+Voutn_4ns = 4.67725E-05 V
+Voutp_minus_Voutn = 3.29995 V
+X_4ns = 3.28603 V
+Y_4ns = 0.236121 V
+P_4ns = 0.148261 V
+Q_4ns = 0.21102 V
+net1_4ns = 0.14076 V
+net2_4ns = 0.000122175 V
+net3_4ns = 3.29365 V
+IDD_avg = -0.000802758 A
+Pavg_approx = 0.0026491 W
+.
+t_clk_rise = 1.01E-09 s
+t_voutn_fall = 3.16947E-09 s
+td_pos = 2.15947E-09 s
+.

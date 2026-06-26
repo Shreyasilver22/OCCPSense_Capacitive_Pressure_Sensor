@@ -1,0 +1,35 @@
+==================================================
+CDAC + TG sampler + StrongARM comparator review
+==================================================
+VDD = 3.3 V
+VCM = 1.65 V
+Cu = 5 fF
+CDAC capacitance per side = 1024*Cu = 5.12 pF
+Comparator output load CLOAD = 20 fF
+TG NMOS = W 8u L 0.5u nf 1 m 4 total 32u
+TG PMOS = W 12u L 0.5u nf 1 m 8 total 96u
+SAMPLE = PULSE 3.3 to 0 at 5ns
+SAMPLEB = PULSE 0 to 3.3 at 5ns
+CLK = PULSE 0 to 3.3 at 6ns
+Track measured at 4.5ns sample ON
+Hold measured at 5.5ns sample OFF before comparator clock
+Output measured at 9ns after comparator decision
+PASS_SIGN: 1 correct polarity 0 wrong polarity 9 zero-diff not graded
+==================================================
+columns: CASE VDIFF_SET EXP_SIGN sample_4p5 sample_5p5 clk_5p5 clk_6p5 ainp_4p5 ainn_4p5 vcp_4p5 vcn_4p5 track_err_p track_err_n vcp_5p5 vcn_5p5 vdiff_hold cm_hold voutp_9 voutn_9 outdiff_9 pass_sign iavg_0_9ns pavg_0_9ns
+==================================================
+POS10M 10m +1 3.3 0 0 3.3 1.655 1.645 1.655 1.645 0 0 1.66693 1.65662 0.010311 1.66177 3.3 2.32162E-09 3.3 1 -3.20599E-05 0.000105798
+NEG10M -10m -1 3.3 0 0 3.3 1.645 1.655 1.645 1.655 0 0 1.65662 1.66693 -0.010311 1.66177 2.32181E-09 3.3 -3.3 1 -3.20599E-05 0.000105798
+POS_HALF_LSB 1.611328125m +1 3.3 0 0 3.3 1.65081 1.64919 1.65081 1.64919 0 0 1.6626 1.66094 0.001661 1.66177 3.3 2.33074E-09 3.3 1 -5.4767E-05 0.000180731
+NEG_HALF_LSB -1.611328125m -1 3.3 0 0 3.3 1.64919 1.65081 1.64919 1.65081 0 0 1.66094 1.6626 -0.001661 1.66177 2.33076E-09 3.3 -3.3 1 -5.4767E-05 0.000180731
+ZERO 0 0 3.3 0 0 3.3 1.65 1.65 1.65 1.65 0 0 1.66177 1.66177 0 1.66177 0.000224031 3.29981 -3.29958 9 -0.000335777 0.00110807
+==================================================
+Review guide
+sample_4p5 should be near 3.3 and sample_5p5 should be near 0
+clk_5p5 should be near 0 and clk_6p5 should be near 3.3
+vcp_4p5 should track ainp_4p5 and vcn_4p5 should track ainn_4p5
+vdiff_hold should have same sign as VDIFF_SET
+POS cases should have outdiff_9 positive and pass_sign 1
+NEG cases should have outdiff_9 negative and pass_sign 1
+ZERO case is not graded because real comparator offset/noise decides it
+==================================================

@@ -1,0 +1,6 @@
+[submodule "xschem/xschem"]
+	path = xschem/xschem
+	url = https://github.com/arjun2000ananth/sar_adc_gf180.git
+[submodule "xschem/SAR_ADC"]
+	path = xschem/SAR_ADC
+	url = https://github.com/arjun2000ananth/sar_adc_gf180.git

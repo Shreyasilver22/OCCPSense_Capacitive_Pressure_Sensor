@@ -1,0 +1,137 @@
+v {xschem version=3.4.5 file_version=1.2
+}
+G {}
+K {type=primitive
+format="@name @@VDD @@VSS @@clk @@rst_n @@start @@comp @@sample @@comp_clk @@busy @@valid @@bp9 @@bp8 @@bp7 @@bp6 @@bp5 @@bp4 @@bp3 @@bp2 @@bp1 @@bp0 @@bn9 @@bn8 @@bn7 @@bn6 @@bn5 @@bn4 @@bn3 @@bn2 @@bn1 @@bn0 @@code9 @@code8 @@code7 @@code6 @@code5 @@code4 @@code3 @@code2 @@code1 @@code0 @symname"
+template="name=x1"}
+V {}
+S {}
+E {}
+L 4 0 -280 0 -220 {}
+L 4 0 700 0 760 {}
+L 4 -200 -160 -140 -160 {}
+L 4 -200 -120 -140 -120 {}
+L 4 -200 -80 -140 -80 {}
+L 4 -200 -40 -140 -40 {}
+L 4 140 -180 200 -180 {}
+L 4 140 -150 200 -150 {}
+L 4 140 -120 200 -120 {}
+L 4 140 -90 200 -90 {}
+L 4 140 -30 200 -30 {}
+L 4 140 -10 200 -10 {}
+L 4 140 10 200 10 {}
+L 4 140 30 200 30 {}
+L 4 140 50 200 50 {}
+L 4 140 70 200 70 {}
+L 4 140 90 200 90 {}
+L 4 140 110 200 110 {}
+L 4 140 130 200 130 {}
+L 4 140 150 200 150 {}
+L 4 140 210 200 210 {}
+L 4 140 230 200 230 {}
+L 4 140 250 200 250 {}
+L 4 140 270 200 270 {}
+L 4 140 290 200 290 {}
+L 4 140 310 200 310 {}
+L 4 140 330 200 330 {}
+L 4 140 350 200 350 {}
+L 4 140 370 200 370 {}
+L 4 140 390 200 390 {}
+L 4 140 450 200 450 {}
+L 4 140 470 200 470 {}
+L 4 140 490 200 490 {}
+L 4 140 510 200 510 {}
+L 4 140 530 200 530 {}
+L 4 140 550 200 550 {}
+L 4 140 570 200 570 {}
+L 4 140 590 200 590 {}
+L 4 140 610 200 610 {}
+L 4 140 630 200 630 {}
+B 4 -140 -220 140 700 {fill=false
+}
+B 5 -2.5 -282.5 2.5 -277.5 {name=VDD dir=inout sim_pinnumber=1}
+B 5 -2.5 757.5 2.5 762.5 {name=VSS dir=inout sim_pinnumber=2}
+B 5 -202.5 -162.5 -197.5 -157.5 {name=clk dir=in sim_pinnumber=3}
+B 5 -202.5 -122.5 -197.5 -117.5 {name=rst_n dir=in sim_pinnumber=4}
+B 5 -202.5 -82.5 -197.5 -77.5 {name=start dir=in sim_pinnumber=5}
+B 5 -202.5 -42.5 -197.5 -37.5 {name=comp dir=in sim_pinnumber=6}
+B 5 197.5 -182.5 202.5 -177.5 {name=sample dir=out sim_pinnumber=7}
+B 5 197.5 -152.5 202.5 -147.5 {name=comp_clk dir=out sim_pinnumber=8}
+B 5 197.5 -122.5 202.5 -117.5 {name=busy dir=out sim_pinnumber=9}
+B 5 197.5 -92.5 202.5 -87.5 {name=valid dir=out sim_pinnumber=10}
+B 5 197.5 -32.5 202.5 -27.5 {name=bp9 dir=out sim_pinnumber=11}
+B 5 197.5 -12.5 202.5 -7.5 {name=bp8 dir=out sim_pinnumber=12}
+B 5 197.5 7.5 202.5 12.5 {name=bp7 dir=out sim_pinnumber=13}
+B 5 197.5 27.5 202.5 32.5 {name=bp6 dir=out sim_pinnumber=14}
+B 5 197.5 47.5 202.5 52.5 {name=bp5 dir=out sim_pinnumber=15}
+B 5 197.5 67.5 202.5 72.5 {name=bp4 dir=out sim_pinnumber=16}
+B 5 197.5 87.5 202.5 92.5 {name=bp3 dir=out sim_pinnumber=17}
+B 5 197.5 107.5 202.5 112.5 {name=bp2 dir=out sim_pinnumber=18}
+B 5 197.5 127.5 202.5 132.5 {name=bp1 dir=out sim_pinnumber=19}
+B 5 197.5 147.5 202.5 152.5 {name=bp0 dir=out sim_pinnumber=20}
+B 5 197.5 207.5 202.5 212.5 {name=bn9 dir=out sim_pinnumber=21}
+B 5 197.5 227.5 202.5 232.5 {name=bn8 dir=out sim_pinnumber=22}
+B 5 197.5 247.5 202.5 252.5 {name=bn7 dir=out sim_pinnumber=23}
+B 5 197.5 267.5 202.5 272.5 {name=bn6 dir=out sim_pinnumber=24}
+B 5 197.5 287.5 202.5 292.5 {name=bn5 dir=out sim_pinnumber=25}
+B 5 197.5 307.5 202.5 312.5 {name=bn4 dir=out sim_pinnumber=26}
+B 5 197.5 327.5 202.5 332.5 {name=bn3 dir=out sim_pinnumber=27}
+B 5 197.5 347.5 202.5 352.5 {name=bn2 dir=out sim_pinnumber=28}
+B 5 197.5 367.5 202.5 372.5 {name=bn1 dir=out sim_pinnumber=29}
+B 5 197.5 387.5 202.5 392.5 {name=bn0 dir=out sim_pinnumber=30}
+B 5 197.5 447.5 202.5 452.5 {name=code9 dir=out sim_pinnumber=31}
+B 5 197.5 467.5 202.5 472.5 {name=code8 dir=out sim_pinnumber=32}
+B 5 197.5 487.5 202.5 492.5 {name=code7 dir=out sim_pinnumber=33}
+B 5 197.5 507.5 202.5 512.5 {name=code6 dir=out sim_pinnumber=34}
+B 5 197.5 527.5 202.5 532.5 {name=code5 dir=out sim_pinnumber=35}
+B 5 197.5 547.5 202.5 552.5 {name=code4 dir=out sim_pinnumber=36}
+B 5 197.5 567.5 202.5 572.5 {name=code3 dir=out sim_pinnumber=37}
+B 5 197.5 587.5 202.5 592.5 {name=code2 dir=out sim_pinnumber=38}
+B 5 197.5 607.5 202.5 612.5 {name=code1 dir=out sim_pinnumber=39}
+B 5 197.5 627.5 202.5 632.5 {name=code0 dir=out sim_pinnumber=40}
+T {sar_fsm_wrapper} -95 -245 0 0 0.35 0.35 {layer=5}
+T {VDD} 10 -275 0 0 0.18 0.18 {layer=5}
+T {VSS} 10 745 0 0 0.18 0.18 {layer=5}
+T {INPUTS} -95 -155 0 0 0.18 0.18 {layer=5}
+T {clk} -130 -170 0 0 0.18 0.18 {layer=5}
+T {rst_n} -130 -130 0 0 0.18 0.18 {layer=5}
+T {start} -130 -90 0 0 0.18 0.18 {layer=5}
+T {comp} -130 -50 0 0 0.18 0.18 {layer=5}
+T {CTRL OUT} 25 -195 0 0 0.18 0.18 {layer=5}
+T {sample} 85 -190 0 0 0.18 0.18 {layer=5}
+T {comp_clk} 75 -160 0 0 0.18 0.18 {layer=5}
+T {busy} 90 -130 0 0 0.18 0.18 {layer=5}
+T {valid} 88 -100 0 0 0.18 0.18 {layer=5}
+T {BP[9:0]} 45 -35 0 0 0.18 0.18 {layer=5}
+T {bp9} 100 -40 0 0 0.16 0.16 {layer=5}
+T {bp8} 100 -20 0 0 0.16 0.16 {layer=5}
+T {bp7} 100 0 0 0 0.16 0.16 {layer=5}
+T {bp6} 100 20 0 0 0.16 0.16 {layer=5}
+T {bp5} 100 40 0 0 0.16 0.16 {layer=5}
+T {bp4} 100 60 0 0 0.16 0.16 {layer=5}
+T {bp3} 100 80 0 0 0.16 0.16 {layer=5}
+T {bp2} 100 100 0 0 0.16 0.16 {layer=5}
+T {bp1} 100 120 0 0 0.16 0.16 {layer=5}
+T {bp0} 100 140 0 0 0.16 0.16 {layer=5}
+T {BN[9:0]} 45 205 0 0 0.18 0.18 {layer=5}
+T {bn9} 100 200 0 0 0.16 0.16 {layer=5}
+T {bn8} 100 220 0 0 0.16 0.16 {layer=5}
+T {bn7} 100 240 0 0 0.16 0.16 {layer=5}
+T {bn6} 100 260 0 0 0.16 0.16 {layer=5}
+T {bn5} 100 280 0 0 0.16 0.16 {layer=5}
+T {bn4} 100 300 0 0 0.16 0.16 {layer=5}
+T {bn3} 100 320 0 0 0.16 0.16 {layer=5}
+T {bn2} 100 340 0 0 0.16 0.16 {layer=5}
+T {bn1} 100 360 0 0 0.16 0.16 {layer=5}
+T {bn0} 100 380 0 0 0.16 0.16 {layer=5}
+T {CODE[9:0]} 20 445 0 0 0.18 0.18 {layer=5}
+T {code9} 80 440 0 0 0.16 0.16 {layer=5}
+T {code8} 80 460 0 0 0.16 0.16 {layer=5}
+T {code7} 80 480 0 0 0.16 0.16 {layer=5}
+T {code6} 80 500 0 0 0.16 0.16 {layer=5}
+T {code5} 80 520 0 0 0.16 0.16 {layer=5}
+T {code4} 80 540 0 0 0.16 0.16 {layer=5}
+T {code3} 80 560 0 0 0.16 0.16 {layer=5}
+T {code2} 80 580 0 0 0.16 0.16 {layer=5}
+T {code1} 80 600 0 0 0.16 0.16 {layer=5}
+T {code0} 80 620 0 0 0.16 0.16 {layer=5}
