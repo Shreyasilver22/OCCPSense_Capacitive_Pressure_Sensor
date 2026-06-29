@@ -1,4 +1,4 @@
-module spi_slave #(parameter N = 8) (
+module spi_slave #(parameter N = 10) (
     input  wire           sclk,
     input  wire           cs_n,
     input  wire           mosi,
@@ -10,44 +10,32 @@ module spi_slave #(parameter N = 8) (
 
     reg [N-1:0] shift_reg;
     reg [N-1:0] mosi_reg;
-    reg [N-1:0] data_latch; // holds result until next conversion
+    reg [N-1:0] data_latch;
     reg [7:0]   bit_cnt;
-    reg         done;
+    reg         cs_n_prev;
 
-    // latch fresh data when valid — holds until next valid
-    always @(posedge valid) begin
-        data_latch <= data_in;
-    end
+    // entire SPI logic clocked on sclk
+    always @(posedge sclk) begin
+        cs_n_prev <= cs_n;
 
-    // load shift register on falling CS_N
-    always @(negedge cs_n) begin
-        shift_reg <= data_latch;
-        bit_cnt   <= 8'd0;
-        done      <= 1'b0;
-    end
+        // latch fresh data when valid
+        if (valid)
+            data_latch <= data_in;
 
-    // shift out MISO on falling SCLK
-    always @(negedge sclk) begin
-        if (!cs_n) begin
+        if (cs_n_prev && !cs_n) begin
+            // falling edge of cs_n — load
+            shift_reg <= data_latch;
+            bit_cnt   <= 8'd0;
+        end else if (!cs_n) begin
+            // active transaction — shift
             shift_reg <= {shift_reg[N-2:0], 1'b0};
+            mosi_reg  <= {mosi_reg[N-2:0], mosi};
             bit_cnt   <= bit_cnt + 8'd1;
-            if (bit_cnt == N-1)
-                done <= 1'b1;
+            if (bit_cnt == N - 1)
+                offset <= mosi_reg;
         end
     end
 
-    // shift in MOSI on rising SCLK
-    always @(posedge sclk) begin
-        if (!cs_n)
-            mosi_reg <= {mosi_reg[N-2:0], mosi};
-    end
-
-    // latch offset on rising CS_N (end of transaction)
-    always @(posedge cs_n) begin
-        if (done)
-            offset <= mosi_reg;
-    end
-
-    assign miso = (!cs_n) ? shift_reg[N-1] : 1'bz;
+    assign miso = (!cs_n) ? shift_reg[N-1] : 1'b0;
 
 endmodule

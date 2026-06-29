@@ -1,4 +1,4 @@
-module digital_cal #(parameter N = 8) (
+module digital_cal #(parameter N = 10) (
     input  wire           clk,
     input  wire           rst_n,
     input  wire [N-1:0]   raw_result,
@@ -8,19 +8,18 @@ module digital_cal #(parameter N = 8) (
     output reg            valid_out
 );
 
-    reg [N:0] sum; // N+1 bits to detect overflow
+    wire [N:0] sum;
+    assign sum = {1'b0, raw_result} + {1'b0, offset};
 
     always @(posedge clk or negedge rst_n) begin
         if (!rst_n) begin
-            cal_result <= 0;
-            valid_out  <= 0;
+            cal_result <= {N{1'b0}};
+            valid_out  <= 1'b0;
         end else begin
-            valid_out <= 0;
+            valid_out <= 1'b0;
             if (valid_in) begin
-                sum = raw_result + offset;
-                // clamp to 255 on overflow
                 cal_result <= sum[N] ? {N{1'b1}} : sum[N-1:0];
-                valid_out  <= 1;
+                valid_out  <= 1'b1;
             end
         end
     end
