@@ -1,0 +1,619 @@
+// DESCRIPTION: Verilator output: Waivers generated with --waiver-output
+
+`verilator_config
+
+// Below are suggested waivers. You have three options:
+//   1. Fix the reason for the linter warning in the Verilog sources
+//   2. Keep the waiver permanently if you are sure it is okay
+//   3. Keep the waiver temporarily to suppress the output
+
+// lint_off -rule PINCONNECTEMPTY -file "*/foss/designs/xschem/SAR_ADC/src/sar_fsm/digital_wrapper.v" -match "Instance pin connected by name with empty reference: 'sample'*"
+
+// lint_off -rule PINCONNECTEMPTY -file "*/foss/designs/xschem/SAR_ADC/src/sar_fsm/digital_wrapper.v" -match "Instance pin connected by name with empty reference: 'comp_clk'*"
+
+// lint_off -rule PINCONNECTEMPTY -file "*/foss/designs/xschem/SAR_ADC/src/sar_fsm/digital_wrapper.v" -match "Instance pin connected by name with empty reference: 'busy'*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule WIDTHTRUNC -file "*/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v" -match "Operator VAR 'LAST_BIT' expects 4 bits on the Initial value, but Initial value's SUB generates 32 bits.*"
+
+// lint_off -rule WIDTHEXPAND -file "*/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v" -match "Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'count' generates 8 bits.*"
+
+// lint_off -rule WIDTHEXPAND -file "*/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v" -match "Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'count' generates 8 bits.*"
+
+// lint_off -rule BLKSEQ -file "*/foss/designs/xschem/SAR_ADC/src/calibration/digital_cal.v" -match "Blocking assignment '=' in sequential logic process*"
+

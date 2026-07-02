@@ -76,6 +76,7 @@ module digital_wrapper #(parameter N = 10, parameter INVERT_COMP = 1'b0) (
 
     // Instantiate SPI Slave
     spi_slave #(.N(N)) u_spi (
+        .rst_n    (rst_n),
         .sclk     (sclk),
         .cs_n     (cs_n),
         .mosi     (mosi),

@@ -1,0 +1,14 @@
+{
+    "json_h": "/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-59-41/05-yosys-jsonheader/digital_wrapper.h.json",
+    "nl": "/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-59-41/06-yosys-synthesis/digital_wrapper.nl.v",
+    "metrics": {
+        "design__lint_error__count": 0,
+        "design__lint_timing_construct__count": 0,
+        "design__lint_warning__count": 304,
+        "design__inferred_latch__count": 0,
+        "design__instance__count": 445,
+        "design__instance__area": 13542.1888,
+        "design__instance_unmapped__count": 0,
+        "synthesis__check_error__count": 12
+    }
+}

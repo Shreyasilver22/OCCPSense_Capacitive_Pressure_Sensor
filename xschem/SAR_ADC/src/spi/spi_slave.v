@@ -1,4 +1,5 @@
 module spi_slave #(parameter N = 10) (
+    input  wire           rst_n,
     input  wire           sclk,
     input  wire           cs_n,
     input  wire           mosi,
@@ -15,24 +16,33 @@ module spi_slave #(parameter N = 10) (
     reg         cs_n_prev;
 
     // entire SPI logic clocked on sclk
-    always @(posedge sclk) begin
-        cs_n_prev <= cs_n;
+    always @(posedge sclk or negedge rst_n) begin
+        if (!rst_n) begin
+            shift_reg <= 0;
+            mosi_reg  <= 0;
+            bit_cnt   <= 0;
+            offset    <= 0;
+            cs_n_prev <= 1'b1;
+            data_latch <= 0;
+        end else begin
+            cs_n_prev <= cs_n;
 
-        // latch fresh data when valid
-        if (valid)
-            data_latch <= data_in;
+            // latch fresh data when valid
+            if (valid)
+                data_latch <= data_in;
 
-        if (cs_n_prev && !cs_n) begin
-            // falling edge of cs_n — load
-            shift_reg <= data_latch;
-            bit_cnt   <= 8'd0;
-        end else if (!cs_n) begin
-            // active transaction — shift
-            shift_reg <= {shift_reg[N-2:0], 1'b0};
-            mosi_reg  <= {mosi_reg[N-2:0], mosi};
-            bit_cnt   <= bit_cnt + 8'd1;
-            if (bit_cnt == N - 1)
-                offset <= mosi_reg;
+            if (cs_n_prev && !cs_n) begin
+                // falling edge of cs_n — load
+                shift_reg <= data_latch;
+                bit_cnt   <= 8'd0;
+            end else if (!cs_n) begin
+                // active transaction — shift
+                shift_reg <= {shift_reg[N-2:0], 1'b0};
+                mosi_reg  <= {mosi_reg[N-2:0], mosi};
+                bit_cnt   <= bit_cnt + 8'd1;
+                if (bit_cnt == N - 1)
+                    offset <= {mosi_reg[N-2:0], mosi};
+            end
         end
     end
 

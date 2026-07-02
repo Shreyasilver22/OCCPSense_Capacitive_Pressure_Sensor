@@ -1,0 +1,3827 @@
+{
+  "creator": "Yosys 0.64 (git sha1 6d2c445ae, g++ 13.3.0-6ubuntu2~24.04.1 -fPIC -O3)",
+  "modules": {
+    "digital_wrapper": {
+      "attributes": {
+        "hdlname": "digital_wrapper",
+        "dynports": "00000000000000000000000000000001",
+        "top": "00000000000000000000000000000001",
+        "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/digital_wrapper.v:3.1-114.10"
+      },
+      "parameter_default_values": {
+        "INVERT_COMP": "0",
+        "N": "00000000000000000000000000001010"
+      },
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "rst_n": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "start": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "comp_in": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "sclk": {
+          "direction": "input",
+          "bits": [ 6 ]
+        },
+        "cs_n": {
+          "direction": "input",
+          "bits": [ 7 ]
+        },
+        "mosi": {
+          "direction": "input",
+          "bits": [ 8 ]
+        },
+        "miso": {
+          "direction": "output",
+          "bits": [ 9 ]
+        },
+        "bp9": {
+          "direction": "output",
+          "bits": [ 10 ]
+        },
+        "bp8": {
+          "direction": "output",
+          "bits": [ 11 ]
+        },
+        "bp7": {
+          "direction": "output",
+          "bits": [ 12 ]
+        },
+        "bp6": {
+          "direction": "output",
+          "bits": [ 13 ]
+        },
+        "bp5": {
+          "direction": "output",
+          "bits": [ 14 ]
+        },
+        "bp4": {
+          "direction": "output",
+          "bits": [ 15 ]
+        },
+        "bp3": {
+          "direction": "output",
+          "bits": [ 16 ]
+        },
+        "bp2": {
+          "direction": "output",
+          "bits": [ 17 ]
+        },
+        "bp1": {
+          "direction": "output",
+          "bits": [ 18 ]
+        },
+        "bp0": {
+          "direction": "output",
+          "bits": [ 19 ]
+        },
+        "bn9": {
+          "direction": "output",
+          "bits": [ 20 ]
+        },
+        "bn8": {
+          "direction": "output",
+          "bits": [ 21 ]
+        },
+        "bn7": {
+          "direction": "output",
+          "bits": [ 22 ]
+        },
+        "bn6": {
+          "direction": "output",
+          "bits": [ 23 ]
+        },
+        "bn5": {
+          "direction": "output",
+          "bits": [ 24 ]
+        },
+        "bn4": {
+          "direction": "output",
+          "bits": [ 25 ]
+        },
+        "bn3": {
+          "direction": "output",
+          "bits": [ 26 ]
+        },
+        "bn2": {
+          "direction": "output",
+          "bits": [ 27 ]
+        },
+        "bn1": {
+          "direction": "output",
+          "bits": [ 28 ]
+        },
+        "bn0": {
+          "direction": "output",
+          "bits": [ 29 ]
+        },
+        "bist_en": {
+          "direction": "output",
+          "bits": [ "0" ]
+        }
+      },
+      "cells": {
+        "$flatten\\u_cal.$add$/foss/designs/xschem/SAR_ADC/src/calibration/digital_cal.v:20$14": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001010",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000001010",
+            "Y_WIDTH": "00000000000000000000000000001011"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/calibration/digital_cal.v:20.23-20.42"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 30, 31, 32, 33, 34, 35, 36, 37, 38, 39 ],
+            "B": [ 40, 41, 42, 43, 44, 45, 46, 47, 48, 49 ],
+            "Y": [ 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60 ]
+          }
+        },
+        "$flatten\\u_cal.$procdff$311": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "00000000000000000000000000000000",
+            "ARST_VALUE": "0000000000",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/calibration/digital_cal.v:13.5-26.8"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 3 ],
+            "CLK": [ 2 ],
+            "D": [ 61, 62, 63, 64, 65, 66, 67, 68, 69, 70 ],
+            "Q": [ 71, 72, 73, 74, 75, 76, 77, 78, 79, 80 ]
+          }
+        },
+        "$flatten\\u_cal.$procdff$316": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "00000000000000000000000000000000",
+            "ARST_VALUE": "0",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/calibration/digital_cal.v:13.5-26.8"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 3 ],
+            "CLK": [ 2 ],
+            "D": [ 81 ],
+            "Q": [ 82 ]
+          }
+        },
+        "$flatten\\u_cal.$procmux$84": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/calibration/digital_cal.v:19.17-19.25|/foss/designs/xschem/SAR_ADC/src/calibration/digital_cal.v:19.13-24.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "1" ],
+            "S": [ 83 ],
+            "Y": [ 81 ]
+          }
+        },
+        "$flatten\\u_cal.$procmux$87": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/calibration/digital_cal.v:19.17-19.25|/foss/designs/xschem/SAR_ADC/src/calibration/digital_cal.v:19.13-24.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 71, 72, 73, 74, 75, 76, 77, 78, 79, 80 ],
+            "B": [ 84, 85, 86, 87, 88, 89, 90, 91, 92, 93 ],
+            "S": [ 83 ],
+            "Y": [ 61, 62, 63, 64, 65, 66, 67, 68, 69, 70 ]
+          }
+        },
+        "$flatten\\u_cal.$ternary$/foss/designs/xschem/SAR_ADC/src/calibration/digital_cal.v:22$15": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/calibration/digital_cal.v:22.31-22.62"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 50, 51, 52, 53, 54, 55, 56, 57, 58, 59 ],
+            "B": [ "1", "1", "1", "1", "1", "1", "1", "1", "1", "1" ],
+            "S": [ 60 ],
+            "Y": [ 84, 85, 86, 87, 88, 89, 90, 91, 92, 93 ]
+          }
+        },
+        "$flatten\\u_sar.$add$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:81$46": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001000",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:81.39-81.51"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 94, 95, 96, 97, 98, 99, 100, 101 ],
+            "B": [ "1" ],
+            "Y": [ 102, 103, 104, 105, 106, 107, 108, 109 ]
+          }
+        },
+        "$flatten\\u_sar.$add$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:88$48": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001000",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:88.39-88.51"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 94, 95, 96, 97, 98, 99, 100, 101 ],
+            "B": [ "1" ],
+            "Y": [ 110, 111, 112, 113, 114, 115, 116, 117 ]
+          }
+        },
+        "$flatten\\u_sar.$and$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:101$68": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001010",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000001010",
+            "Y_WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:101.41-101.60"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 29, 28, 27, 26, 25, 24, 23, 22, 21, 20 ],
+            "B": [ 118, 119, 120, 121, 122, 123, 124, 125, 126, 127 ],
+            "Y": [ 128, 129, 130, 131, 132, 133, 134, 135, 136, 137 ]
+          }
+        },
+        "$flatten\\u_sar.$and$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:102$75": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001010",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000001010",
+            "Y_WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:102.41-102.60"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 19, 18, 17, 16, 15, 14, 13, 12, 11, 10 ],
+            "B": [ 138, 139, 140, 141, 142, 143, 144, 145, 146, 147 ],
+            "Y": [ 148, 149, 150, 151, 152, 153, 154, 155, 156, 157 ]
+          }
+        },
+        "$flatten\\u_sar.$and$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:97$52": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001010",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000001010",
+            "Y_WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:97.21-97.48"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 30, 31, 32, 33, 34, 35, 36, 37, 38, 39 ],
+            "B": [ 158, 159, 160, 161, 162, 163, 164, 165, 166, 167 ],
+            "Y": [ 168, 169, 170, 171, 172, 173, 174, 175, 176, 177 ]
+          }
+        },
+        "$flatten\\u_sar.$eq$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:77$45": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001000",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000001000",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:77.25-77.51"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 94, 95, 96, 97, 98, 99, 100, 101 ],
+            "B": [ "1", "1", "0", "0", "0", "0", "0", "0" ],
+            "Y": [ 178 ]
+          }
+        },
+        "$flatten\\u_sar.$eq$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:85$47": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001000",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000001000",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:85.25-85.55"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 94, 95, 96, 97, 98, 99, 100, 101 ],
+            "B": [ "0", "1", "0", "0", "0", "0", "0", "0" ],
+            "Y": [ 179 ]
+          }
+        },
+        "$flatten\\u_sar.$ne$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:99$56": {
+          "hide_name": 1,
+          "type": "$reduce_bool",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:99.25-99.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 180, 181, 182, 183 ],
+            "Y": [ 184 ]
+          }
+        },
+        "$flatten\\u_sar.$neg$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:101$65": {
+          "hide_name": 1,
+          "type": "$neg",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000001",
+            "A_WIDTH": "00000000000000000000000000000101",
+            "Y_WIDTH": "00000000000000000000000000000101"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:101.41-101.60"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 180, 181, 182, 183, "0" ],
+            "Y": [ 185, 186, 187, 188, 189 ]
+          }
+        },
+        "$flatten\\u_sar.$neg$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:101$69": {
+          "hide_name": 1,
+          "type": "$neg",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000001",
+            "A_WIDTH": "00000000000000000000000000000101",
+            "Y_WIDTH": "00000000000000000000000000000101"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:101.41-101.60"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 180, 181, 182, 183, "0" ],
+            "Y": [ 190, 191, 192, 193, 194 ]
+          }
+        },
+        "$flatten\\u_sar.$neg$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:102$72": {
+          "hide_name": 1,
+          "type": "$neg",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000001",
+            "A_WIDTH": "00000000000000000000000000000101",
+            "Y_WIDTH": "00000000000000000000000000000101"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:102.41-102.60"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 180, 181, 182, 183, "0" ],
+            "Y": [ 195, 196, 197, 198, 199 ]
+          }
+        },
+        "$flatten\\u_sar.$neg$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:102$76": {
+          "hide_name": 1,
+          "type": "$neg",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000001",
+            "A_WIDTH": "00000000000000000000000000000101",
+            "Y_WIDTH": "00000000000000000000000000000101"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:102.41-102.60"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 180, 181, 182, 183, "0" ],
+            "Y": [ 200, 201, 202, 203, 204 ]
+          }
+        },
+        "$flatten\\u_sar.$neg$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:97$49": {
+          "hide_name": 1,
+          "type": "$neg",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000001",
+            "A_WIDTH": "00000000000000000000000000000101",
+            "Y_WIDTH": "00000000000000000000000000000101"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:97.21-97.48"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 180, 181, 182, 183, "0" ],
+            "Y": [ 205, 206, 207, 208, 209 ]
+          }
+        },
+        "$flatten\\u_sar.$neg$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:97$53": {
+          "hide_name": 1,
+          "type": "$neg",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000001",
+            "A_WIDTH": "00000000000000000000000000000101",
+            "Y_WIDTH": "00000000000000000000000000000101"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:97.21-97.48"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 180, 181, 182, 183, "0" ],
+            "Y": [ 210, 211, 212, 213, 214 ]
+          }
+        },
+        "$flatten\\u_sar.$not$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:101$67": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001010",
+            "Y_WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:101.41-101.60"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 215, 216, 217, 218, 219, 220, 221, 222, 223, 224 ],
+            "Y": [ 118, 119, 120, 121, 122, 123, 124, 125, 126, 127 ]
+          }
+        },
+        "$flatten\\u_sar.$not$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:102$74": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001010",
+            "Y_WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:102.41-102.60"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 225, 226, 227, 228, 229, 230, 231, 232, 233, 234 ],
+            "Y": [ 138, 139, 140, 141, 142, 143, 144, 145, 146, 147 ]
+          }
+        },
+        "$flatten\\u_sar.$not$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:97$51": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001010",
+            "Y_WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:97.21-97.48"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 235, 236, 237, 238, 239, 240, 241, 242, 243, 244 ],
+            "Y": [ 158, 159, 160, 161, 162, 163, 164, 165, 166, 167 ]
+          }
+        },
+        "$flatten\\u_sar.$or$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:101$71": {
+          "hide_name": 1,
+          "type": "$or",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001010",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000001010",
+            "Y_WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:101.41-101.60"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 128, 129, 130, 131, 132, 133, 134, 135, 136, 137 ],
+            "B": [ 245, 246, 247, 248, 249, 250, 251, 252, 253, 254 ],
+            "Y": [ 255, 256, 257, 258, 259, 260, 261, 262, 263, 264 ]
+          }
+        },
+        "$flatten\\u_sar.$or$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:102$78": {
+          "hide_name": 1,
+          "type": "$or",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001010",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000001010",
+            "Y_WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:102.41-102.60"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 148, 149, 150, 151, 152, 153, 154, 155, 156, 157 ],
+            "B": [ 265, 266, 267, 268, 269, 270, 271, 272, 273, 274 ],
+            "Y": [ 275, 276, 277, 278, 279, 280, 281, 282, 283, 284 ]
+          }
+        },
+        "$flatten\\u_sar.$or$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:97$55": {
+          "hide_name": 1,
+          "type": "$or",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001010",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000001010",
+            "Y_WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:97.21-97.48"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 168, 169, 170, 171, 172, 173, 174, 175, 176, 177 ],
+            "B": [ 285, 286, 287, 288, 289, 290, 291, 292, 293, 294 ],
+            "Y": [ 295, 296, 297, 298, 299, 300, 301, 302, 303, 304 ]
+          }
+        },
+        "$flatten\\u_sar.$procdff$352": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "00000000000000000000000000000000",
+            "ARST_VALUE": "0",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:48.5-120.8"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 3 ],
+            "CLK": [ 2 ],
+            "D": [ 305 ],
+            "Q": [ 83 ]
+          }
+        },
+        "$flatten\\u_sar.$procdff$357": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "00000000000000000000000000000000",
+            "ARST_VALUE": "0000000000",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:48.5-120.8"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 3 ],
+            "CLK": [ 2 ],
+            "D": [ 306, 307, 308, 309, 310, 311, 312, 313, 314, 315 ],
+            "Q": [ 19, 18, 17, 16, 15, 14, 13, 12, 11, 10 ]
+          }
+        },
+        "$flatten\\u_sar.$procdff$362": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "00000000000000000000000000000000",
+            "ARST_VALUE": "0000000000",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:48.5-120.8"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 3 ],
+            "CLK": [ 2 ],
+            "D": [ 316, 317, 318, 319, 320, 321, 322, 323, 324, 325 ],
+            "Q": [ 29, 28, 27, 26, 25, 24, 23, 22, 21, 20 ]
+          }
+        },
+        "$flatten\\u_sar.$procdff$367": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "00000000000000000000000000000000",
+            "ARST_VALUE": "0000000000",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:48.5-120.8"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 3 ],
+            "CLK": [ 2 ],
+            "D": [ 326, 327, 328, 329, 330, 331, 332, 333, 334, 335 ],
+            "Q": [ 30, 31, 32, 33, 34, 35, 36, 37, 38, 39 ]
+          }
+        },
+        "$flatten\\u_sar.$procdff$372": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "00000000000000000000000000000000",
+            "ARST_VALUE": "000",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:48.5-120.8"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 3 ],
+            "CLK": [ 2 ],
+            "D": [ 336, 337, 338 ],
+            "Q": [ 339, 340, 341 ]
+          }
+        },
+        "$flatten\\u_sar.$procdff$377": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "00000000000000000000000000000000",
+            "ARST_VALUE": "1001",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:48.5-120.8"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 3 ],
+            "CLK": [ 2 ],
+            "D": [ 342, 343, 344, 345 ],
+            "Q": [ 180, 181, 182, 183 ]
+          }
+        },
+        "$flatten\\u_sar.$procdff$382": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "00000000000000000000000000000000",
+            "ARST_VALUE": "00000000",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:48.5-120.8"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 3 ],
+            "CLK": [ 2 ],
+            "D": [ 346, 347, 348, 349, 350, 351, 352, 353 ],
+            "Q": [ 94, 95, 96, 97, 98, 99, 100, 101 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$105": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:101.29-101.39|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:101.25-102.61"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 29, 28, 27, 26, 25, 24, 23, 22, 21, 20 ],
+            "B": [ 255, 256, 257, 258, 259, 260, 261, 262, 263, 264 ],
+            "S": [ 5 ],
+            "Y": [ 354, 355, 356, 357, 358, 359, 360, 361, 362, 363 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$107": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:99.25-99.40|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:99.21-108.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x", "x", "x", "x", "x", "x", "x", "x", "x", "x" ],
+            "B": [ 354, 355, 356, 357, 358, 359, 360, 361, 362, 363 ],
+            "S": [ 184 ],
+            "Y": [ 364, 365, 366, 367, 368, 369, 370, 371, 372, 373 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$109": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:94.20-94.20|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.13-118.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x", "x", "x", "x", "x", "x", "x", "x", "x", "x" ],
+            "B": [ 364, 365, 366, 367, 368, 369, 370, 371, 372, 373 ],
+            "S": [ 374 ],
+            "Y": [ 375, 376, 377, 378, 379, 380, 381, 382, 383, 384 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$110_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:94.20-94.20|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.13-118.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 339, 340, 341 ],
+            "B": [ "0", "0", "1" ],
+            "Y": [ 374 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$125": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:101.29-101.39|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:101.25-102.61"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 275, 276, 277, 278, 279, 280, 281, 282, 283, 284 ],
+            "B": [ 19, 18, 17, 16, 15, 14, 13, 12, 11, 10 ],
+            "S": [ 5 ],
+            "Y": [ 385, 386, 387, 388, 389, 390, 391, 392, 393, 394 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$127": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:99.25-99.40|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:99.21-108.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x", "x", "x", "x", "x", "x", "x", "x", "x", "x" ],
+            "B": [ 385, 386, 387, 388, 389, 390, 391, 392, 393, 394 ],
+            "S": [ 184 ],
+            "Y": [ 395, 396, 397, 398, 399, 400, 401, 402, 403, 404 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$129": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:94.20-94.20|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.13-118.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x", "x", "x", "x", "x", "x", "x", "x", "x", "x" ],
+            "B": [ 395, 396, 397, 398, 399, 400, 401, 402, 403, 404 ],
+            "S": [ 405 ],
+            "Y": [ 406, 407, 408, 409, 410, 411, 412, 413, 414, 415 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$130_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:94.20-94.20|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.13-118.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 339, 340, 341 ],
+            "B": [ "0", "0", "1" ],
+            "Y": [ 405 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$144": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:99.25-99.40|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:99.21-108.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 19, 18, 17, 16, 15, 14, 13, 12, 11, 10 ],
+            "B": [ 406, 407, 408, 409, 410, 411, 412, 413, 414, 415 ],
+            "S": [ 184 ],
+            "Y": [ 416, 417, 418, 419, 420, 421, 422, 423, 424, 425 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$146": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:94.20-94.20|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.13-118.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x", "x", "x", "x", "x", "x", "x", "x", "x", "x" ],
+            "B": [ 416, 417, 418, 419, 420, 421, 422, 423, 424, 425 ],
+            "S": [ 426 ],
+            "Y": [ 427, 428, 429, 430, 431, 432, 433, 434, 435, 436 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$147_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:94.20-94.20|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.13-118.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 339, 340, 341 ],
+            "B": [ "0", "0", "1" ],
+            "Y": [ 426 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$151": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:99.25-99.40|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:99.21-108.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 29, 28, 27, 26, 25, 24, 23, 22, 21, 20 ],
+            "B": [ 375, 376, 377, 378, 379, 380, 381, 382, 383, 384 ],
+            "S": [ 184 ],
+            "Y": [ 437, 438, 439, 440, 441, 442, 443, 444, 445, 446 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$153": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:94.20-94.20|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.13-118.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x", "x", "x", "x", "x", "x", "x", "x", "x", "x" ],
+            "B": [ 437, 438, 439, 440, 441, 442, 443, 444, 445, 446 ],
+            "S": [ 447 ],
+            "Y": [ 448, 449, 450, 451, 452, 453, 454, 455, 456, 457 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$154_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:94.20-94.20|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.13-118.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 339, 340, 341 ],
+            "B": [ "0", "0", "1" ],
+            "Y": [ 447 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$176": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:64.25-64.30|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:64.21-69.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 30, 31, 32, 33, 34, 35, 36, 37, 38, 39 ],
+            "B": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "S": [ 4 ],
+            "Y": [ 458, 459, 460, 461, 462, 463, 464, 465, 466, 467 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$178": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.25-59.25|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.13-118.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x", "x", "x", "x", "x", "x", "x", "x", "x", "x" ],
+            "B": [ 458, 459, 460, 461, 462, 463, 464, 465, 466, 467 ],
+            "S": [ 468 ],
+            "Y": [ 469, 470, 471, 472, 473, 474, 475, 476, 477, 478 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$179_CMP0": {
+          "hide_name": 1,
+          "type": "$logic_not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.25-59.25|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.13-118.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 339, 340, 341 ],
+            "Y": [ 468 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$187": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:64.25-64.30|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:64.21-69.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 29, 28, 27, 26, 25, 24, 23, 22, 21, 20 ],
+            "B": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "S": [ 4 ],
+            "Y": [ 479, 480, 481, 482, 483, 484, 485, 486, 487, 488 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$189": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.25-59.25|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.13-118.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x", "x", "x", "x", "x", "x", "x", "x", "x", "x" ],
+            "B": [ 479, 480, 481, 482, 483, 484, 485, 486, 487, 488 ],
+            "S": [ 489 ],
+            "Y": [ 490, 491, 492, 493, 494, 495, 496, 497, 498, 499 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$190_CMP0": {
+          "hide_name": 1,
+          "type": "$logic_not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.25-59.25|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.13-118.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 339, 340, 341 ],
+            "Y": [ 489 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$198": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:64.25-64.30|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:64.21-69.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 19, 18, 17, 16, 15, 14, 13, 12, 11, 10 ],
+            "B": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "S": [ 4 ],
+            "Y": [ 500, 501, 502, 503, 504, 505, 506, 507, 508, 509 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$200": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.25-59.25|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.13-118.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x", "x", "x", "x", "x", "x", "x", "x", "x", "x" ],
+            "B": [ 500, 501, 502, 503, 504, 505, 506, 507, 508, 509 ],
+            "S": [ 510 ],
+            "Y": [ 511, 512, 513, 514, 515, 516, 517, 518, 519, 520 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$201_CMP0": {
+          "hide_name": 1,
+          "type": "$logic_not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.25-59.25|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.13-118.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 339, 340, 341 ],
+            "Y": [ 510 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$204": {
+          "hide_name": 1,
+          "type": "$pmux",
+          "parameters": {
+            "S_WIDTH": "00000000000000000000000000000011",
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:94.20-94.20|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.13-118.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 19, 18, 17, 16, 15, 14, 13, 12, 11, 10 ],
+            "B": [ 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 511, 512, 513, 514, 515, 516, 517, 518, 519, 520 ],
+            "S": [ 521, 522, 523 ],
+            "Y": [ 306, 307, 308, 309, 310, 311, 312, 313, 314, 315 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$205_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:94.20-94.20|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.13-118.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 339, 340, 341 ],
+            "B": [ "0", "0", "1" ],
+            "Y": [ 521 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$206_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:70.20-70.20|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.13-118.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 339, 340, 341 ],
+            "B": [ "1", "0", "0" ],
+            "Y": [ 522 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$207_CMP0": {
+          "hide_name": 1,
+          "type": "$logic_not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.25-59.25|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.13-118.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 339, 340, 341 ],
+            "Y": [ 523 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$210": {
+          "hide_name": 1,
+          "type": "$pmux",
+          "parameters": {
+            "S_WIDTH": "00000000000000000000000000000011",
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:94.20-94.20|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.13-118.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 29, 28, 27, 26, 25, 24, 23, 22, 21, 20 ],
+            "B": [ 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 490, 491, 492, 493, 494, 495, 496, 497, 498, 499 ],
+            "S": [ 524, 525, 526 ],
+            "Y": [ 316, 317, 318, 319, 320, 321, 322, 323, 324, 325 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$211_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:94.20-94.20|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.13-118.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 339, 340, 341 ],
+            "B": [ "0", "0", "1" ],
+            "Y": [ 524 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$212_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:70.20-70.20|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.13-118.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 339, 340, 341 ],
+            "B": [ "1", "0", "0" ],
+            "Y": [ 525 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$213_CMP0": {
+          "hide_name": 1,
+          "type": "$logic_not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.25-59.25|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.13-118.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 339, 340, 341 ],
+            "Y": [ 526 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$216": {
+          "hide_name": 1,
+          "type": "$pmux",
+          "parameters": {
+            "S_WIDTH": "00000000000000000000000000000010",
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:94.20-94.20|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.13-118.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 30, 31, 32, 33, 34, 35, 36, 37, 38, 39 ],
+            "B": [ 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478 ],
+            "S": [ 527, 528 ],
+            "Y": [ 326, 327, 328, 329, 330, 331, 332, 333, 334, 335 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$217_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:94.20-94.20|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.13-118.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 339, 340, 341 ],
+            "B": [ "0", "0", "1" ],
+            "Y": [ 527 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$218_CMP0": {
+          "hide_name": 1,
+          "type": "$logic_not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.25-59.25|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.13-118.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 339, 340, 341 ],
+            "Y": [ 528 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$232": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:109.20-109.20|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.13-118.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "1" ],
+            "S": [ 529 ],
+            "Y": [ 305 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$233_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:109.20-109.20|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.13-118.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 339, 340, 341 ],
+            "B": [ "1", "0", "1" ],
+            "Y": [ 529 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$242": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:99.25-99.40|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:99.21-108.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 94, 95, 96, 97, 98, 99, 100, 101 ],
+            "B": [ "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "S": [ 184 ],
+            "Y": [ 530, 531, 532, 533, 534, 535, 536, 537 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$244": {
+          "hide_name": 1,
+          "type": "$pmux",
+          "parameters": {
+            "S_WIDTH": "00000000000000000000000000000100",
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:94.20-94.20|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.13-118.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 94, 95, 96, 97, 98, 99, 100, 101 ],
+            "B": [ 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551, 552, 553, 554, 555, 556, 557, 558, 559, 560, 561 ],
+            "S": [ 562, 563, 564, 565 ],
+            "Y": [ 346, 347, 348, 349, 350, 351, 352, 353 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$245_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:94.20-94.20|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.13-118.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 339, 340, 341 ],
+            "B": [ "0", "0", "1" ],
+            "Y": [ 562 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$247": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:85.25-85.55|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:85.21-88.52"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 110, 111, 112, 113, 114, 115, 116, 117 ],
+            "B": [ "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "S": [ 179 ],
+            "Y": [ 538, 539, 540, 541, 542, 543, 544, 545 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$249_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:82.20-82.20|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.13-118.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 339, 340, 341 ],
+            "B": [ "0", "1", "0" ],
+            "Y": [ 563 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$251": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:77.25-77.51|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:77.21-81.52"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 102, 103, 104, 105, 106, 107, 108, 109 ],
+            "B": [ "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "S": [ 178 ],
+            "Y": [ 546, 547, 548, 549, 550, 551, 552, 553 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$253_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:70.20-70.20|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.13-118.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 339, 340, 341 ],
+            "B": [ "1", "0", "0" ],
+            "Y": [ 564 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$255": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:64.25-64.30|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:64.21-69.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 94, 95, 96, 97, 98, 99, 100, 101 ],
+            "B": [ "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "S": [ 4 ],
+            "Y": [ 554, 555, 556, 557, 558, 559, 560, 561 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$257_CMP0": {
+          "hide_name": 1,
+          "type": "$logic_not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.25-59.25|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.13-118.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 339, 340, 341 ],
+            "Y": [ 565 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$261": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:99.25-99.40|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:99.21-108.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 180, 181, 182, 183 ],
+            "B": [ 566, 567, 568, 569 ],
+            "S": [ 184 ],
+            "Y": [ 570, 571, 572, 573 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$263": {
+          "hide_name": 1,
+          "type": "$pmux",
+          "parameters": {
+            "S_WIDTH": "00000000000000000000000000000010",
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:94.20-94.20|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.13-118.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 180, 181, 182, 183 ],
+            "B": [ 570, 571, 572, 573, 574, 575, 576, 577 ],
+            "S": [ 578, 579 ],
+            "Y": [ 342, 343, 344, 345 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$264_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:94.20-94.20|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.13-118.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 339, 340, 341 ],
+            "B": [ "0", "0", "1" ],
+            "Y": [ 578 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$266": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:64.25-64.30|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:64.21-69.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 180, 181, 182, 183 ],
+            "B": [ "1", "0", "0", "1" ],
+            "S": [ 4 ],
+            "Y": [ 574, 575, 576, 577 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$268_CMP0": {
+          "hide_name": 1,
+          "type": "$logic_not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.25-59.25|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.13-118.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 339, 340, 341 ],
+            "Y": [ 579 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$272": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:99.25-99.40|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:99.21-108.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "1", "0", "1" ],
+            "B": [ "0", "1", "0" ],
+            "S": [ 184 ],
+            "Y": [ 580, 581, 582 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$274": {
+          "hide_name": 1,
+          "type": "$pmux",
+          "parameters": {
+            "S_WIDTH": "00000000000000000000000000000101",
+            "WIDTH": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:94.20-94.20|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.13-118.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0", "0" ],
+            "B": [ 580, 581, 582, "0", "0", "1", 583, 584, 585, 586, 587, 588, 589, 590, 591 ],
+            "S": [ 592, 593, 594, 595, 596 ],
+            "Y": [ 336, 337, 338 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$275_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:94.20-94.20|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.13-118.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 339, 340, 341 ],
+            "B": [ "0", "0", "1" ],
+            "Y": [ 592 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$276_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:89.20-89.20|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.13-118.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 339, 340, 341 ],
+            "B": [ "1", "1", "0" ],
+            "Y": [ 593 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$278": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:85.25-85.55|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:85.21-88.52"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 339, 340, 341 ],
+            "B": [ "1", "1", "0" ],
+            "S": [ 179 ],
+            "Y": [ 583, 584, 585 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$280_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:82.20-82.20|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.13-118.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 339, 340, 341 ],
+            "B": [ "0", "1", "0" ],
+            "Y": [ 594 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$282": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:77.25-77.51|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:77.21-81.52"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 339, 340, 341 ],
+            "B": [ "0", "1", "0" ],
+            "S": [ 178 ],
+            "Y": [ 586, 587, 588 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$284_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:70.20-70.20|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.13-118.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 339, 340, 341 ],
+            "B": [ "1", "0", "0" ],
+            "Y": [ 595 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$286": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:64.25-64.30|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:64.21-69.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 339, 340, 341 ],
+            "B": [ "1", "0", "0" ],
+            "S": [ 4 ],
+            "Y": [ 589, 590, 591 ]
+          }
+        },
+        "$flatten\\u_sar.$procmux$288_CMP0": {
+          "hide_name": 1,
+          "type": "$logic_not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.25-59.25|/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:59.13-118.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 339, 340, 341 ],
+            "Y": [ 596 ]
+          }
+        },
+        "$flatten\\u_sar.$shift$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:101$66": {
+          "hide_name": 1,
+          "type": "$shift",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000001",
+            "B_WIDTH": "00000000000000000000000000000101",
+            "Y_WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:101.41-101.60"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "1" ],
+            "B": [ 185, 186, 187, 188, 189 ],
+            "Y": [ 215, 216, 217, 218, 219, 220, 221, 222, 223, 224 ]
+          }
+        },
+        "$flatten\\u_sar.$shift$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:101$70": {
+          "hide_name": 1,
+          "type": "$shift",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000001",
+            "B_WIDTH": "00000000000000000000000000000101",
+            "Y_WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:101.41-101.60"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "1" ],
+            "B": [ 190, 191, 192, 193, 194 ],
+            "Y": [ 245, 246, 247, 248, 249, 250, 251, 252, 253, 254 ]
+          }
+        },
+        "$flatten\\u_sar.$shift$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:102$73": {
+          "hide_name": 1,
+          "type": "$shift",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000001",
+            "B_WIDTH": "00000000000000000000000000000101",
+            "Y_WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:102.41-102.60"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "1" ],
+            "B": [ 195, 196, 197, 198, 199 ],
+            "Y": [ 225, 226, 227, 228, 229, 230, 231, 232, 233, 234 ]
+          }
+        },
+        "$flatten\\u_sar.$shift$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:102$77": {
+          "hide_name": 1,
+          "type": "$shift",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000001",
+            "B_WIDTH": "00000000000000000000000000000101",
+            "Y_WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:102.41-102.60"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "1" ],
+            "B": [ 200, 201, 202, 203, 204 ],
+            "Y": [ 265, 266, 267, 268, 269, 270, 271, 272, 273, 274 ]
+          }
+        },
+        "$flatten\\u_sar.$shift$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:97$50": {
+          "hide_name": 1,
+          "type": "$shift",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000001",
+            "B_WIDTH": "00000000000000000000000000000101",
+            "Y_WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:97.21-97.48"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "1" ],
+            "B": [ 205, 206, 207, 208, 209 ],
+            "Y": [ 235, 236, 237, 238, 239, 240, 241, 242, 243, 244 ]
+          }
+        },
+        "$flatten\\u_sar.$shift$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:97$54": {
+          "hide_name": 1,
+          "type": "$shift",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000001",
+            "B_WIDTH": "00000000000000000000000000000101",
+            "Y_WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:97.21-97.48"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 210, 211, 212, 213, 214 ],
+            "Y": [ 285, 286, 287, 288, 289, 290, 291, 292, 293, 294 ]
+          }
+        },
+        "$flatten\\u_sar.$sub$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:103$79": {
+          "hide_name": 1,
+          "type": "$sub",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:103.36-103.50"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 180, 181, 182, 183 ],
+            "B": [ "1" ],
+            "Y": [ 566, 567, 568, 569 ]
+          }
+        },
+        "$flatten\\u_spi.$add$/foss/designs/xschem/SAR_ADC/src/spi/spi_slave.v:33$5": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001000",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000001000",
+            "Y_WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/spi/spi_slave.v:33.26-33.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 597, 598, 599, 600, 601, 602, 603, 604 ],
+            "B": [ "1", "0", "0", "0", "0", "0", "0", "0" ],
+            "Y": [ 605, 606, 607, 608, 609, 610, 611, 612 ]
+          }
+        },
+        "$flatten\\u_spi.$eq$/foss/designs/xschem/SAR_ADC/src/spi/spi_slave.v:34$6": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001000",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000001000",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/spi/spi_slave.v:34.17-34.31"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 597, 598, 599, 600, 601, 602, 603, 604 ],
+            "B": [ "1", "0", "0", "1", "0", "0", "0", "0" ],
+            "Y": [ 613 ]
+          }
+        },
+        "$flatten\\u_spi.$procdff$324": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/spi/spi_slave.v:46.5-49.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 7 ],
+            "D": [ 614, 615, 616, 617, 618, 619, 620, 621, 622, 623 ],
+            "Q": [ 40, 41, 42, 43, 44, 45, 46, 47, 48, 49 ]
+          }
+        },
+        "$flatten\\u_spi.$procdff$325": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/spi/spi_slave.v:40.5-43.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 6 ],
+            "D": [ 624, 625, 626, 627, 628, 629, 630, 631, 632, 633 ],
+            "Q": [ 634, 635, 636, 637, 638, 639, 640, 641, 642, 643 ]
+          }
+        },
+        "$flatten\\u_spi.$procdff$326": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "0",
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/spi/spi_slave.v:30.5-37.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 6 ],
+            "D": [ 644, 645, 646, 647, 648, 649, 650, 651, 652, 653 ],
+            "Q": [ 654, 655, 656, 657, 658, 659, 660, 661, 662, 663 ]
+          }
+        },
+        "$flatten\\u_spi.$procdff$327": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "0",
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/spi/spi_slave.v:30.5-37.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 6 ],
+            "D": [ 664, 665, 666, 667, 668, 669, 670, 671 ],
+            "Q": [ 597, 598, 599, 600, 601, 602, 603, 604 ]
+          }
+        },
+        "$flatten\\u_spi.$procdff$328": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "0",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/spi/spi_slave.v:30.5-37.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 6 ],
+            "D": [ 672 ],
+            "Q": [ 673 ]
+          }
+        },
+        "$flatten\\u_spi.$procdff$329": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "0",
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/spi/spi_slave.v:23.5-27.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 7 ],
+            "D": [ 674, 675, 676, 677, 678, 679, 680, 681, 682, 683 ],
+            "Q": [ 654, 655, 656, 657, 658, 659, 660, 661, 662, 663 ]
+          }
+        },
+        "$flatten\\u_spi.$procdff$330": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "0",
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/spi/spi_slave.v:23.5-27.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 7 ],
+            "D": [ "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "Q": [ 597, 598, 599, 600, 601, 602, 603, 604 ]
+          }
+        },
+        "$flatten\\u_spi.$procdff$331": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "0",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/spi/spi_slave.v:23.5-27.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 7 ],
+            "D": [ "0" ],
+            "Q": [ 673 ]
+          }
+        },
+        "$flatten\\u_spi.$procdff$332": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/spi/spi_slave.v:18.5-20.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 82 ],
+            "D": [ 71, 72, 73, 74, 75, 76, 77, 78, 79, 80 ],
+            "Q": [ 674, 675, 676, 677, 678, 679, 680, 681, 682, 683 ]
+          }
+        },
+        "$flatten\\u_spi.$procmux$89": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/spi/spi_slave.v:47.13-47.17|/foss/designs/xschem/SAR_ADC/src/spi/spi_slave.v:47.9-48.32"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 40, 41, 42, 43, 44, 45, 46, 47, 48, 49 ],
+            "B": [ 634, 635, 636, 637, 638, 639, 640, 641, 642, 643 ],
+            "S": [ 673 ],
+            "Y": [ 614, 615, 616, 617, 618, 619, 620, 621, 622, 623 ]
+          }
+        },
+        "$flatten\\u_spi.$procmux$91": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/spi/spi_slave.v:41.13-41.18|/foss/designs/xschem/SAR_ADC/src/spi/spi_slave.v:41.9-42.49"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 8, 634, 635, 636, 637, 638, 639, 640, 641, 642 ],
+            "B": [ 634, 635, 636, 637, 638, 639, 640, 641, 642, 643 ],
+            "S": [ 7 ],
+            "Y": [ 624, 625, 626, 627, 628, 629, 630, 631, 632, 633 ]
+          }
+        },
+        "$flatten\\u_spi.$procmux$93": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/spi/spi_slave.v:34.17-34.31|/foss/designs/xschem/SAR_ADC/src/spi/spi_slave.v:34.13-35.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 673 ],
+            "B": [ "1" ],
+            "S": [ 613 ],
+            "Y": [ 684 ]
+          }
+        },
+        "$flatten\\u_spi.$procmux$95": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/spi/spi_slave.v:31.13-31.18|/foss/designs/xschem/SAR_ADC/src/spi/spi_slave.v:31.9-36.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 684 ],
+            "B": [ 673 ],
+            "S": [ 7 ],
+            "Y": [ 672 ]
+          }
+        },
+        "$flatten\\u_spi.$procmux$97": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/spi/spi_slave.v:31.13-31.18|/foss/designs/xschem/SAR_ADC/src/spi/spi_slave.v:31.9-36.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 605, 606, 607, 608, 609, 610, 611, 612 ],
+            "B": [ 597, 598, 599, 600, 601, 602, 603, 604 ],
+            "S": [ 7 ],
+            "Y": [ 664, 665, 666, 667, 668, 669, 670, 671 ]
+          }
+        },
+        "$flatten\\u_spi.$procmux$99": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/spi/spi_slave.v:31.13-31.18|/foss/designs/xschem/SAR_ADC/src/spi/spi_slave.v:31.9-36.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", 654, 655, 656, 657, 658, 659, 660, 661, 662 ],
+            "B": [ 654, 655, 656, 657, 658, 659, 660, 661, 662, 663 ],
+            "S": [ 7 ],
+            "Y": [ 644, 645, 646, 647, 648, 649, 650, 651, 652, 653 ]
+          }
+        },
+        "$flatten\\u_spi.$ternary$/foss/designs/xschem/SAR_ADC/src/spi/spi_slave.v:51$11": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/spi/spi_slave.v:51.19-51.50"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 663 ],
+            "B": [ "z" ],
+            "S": [ 7 ],
+            "Y": [ 9 ]
+          }
+        }
+      },
+      "netnames": {
+        "$flatten\\u_cal.$0\\cal_result[9:0]": {
+          "hide_name": 1,
+          "bits": [ 61, 62, 63, 64, 65, 66, 67, 68, 69, 70 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/calibration/digital_cal.v:13.5-26.8"
+          }
+        },
+        "$flatten\\u_cal.$0\\valid_out[0:0]": {
+          "hide_name": 1,
+          "bits": [ 81 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/calibration/digital_cal.v:13.5-26.8"
+          }
+        },
+        "$flatten\\u_cal.$add$/foss/designs/xschem/SAR_ADC/src/calibration/digital_cal.v:20$14_Y": {
+          "hide_name": 1,
+          "bits": [ 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/calibration/digital_cal.v:20.23-20.42"
+          }
+        },
+        "$flatten\\u_cal.$ternary$/foss/designs/xschem/SAR_ADC/src/calibration/digital_cal.v:22$15_Y": {
+          "hide_name": 1,
+          "bits": [ 84, 85, 86, 87, 88, 89, 90, 91, 92, 93 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/calibration/digital_cal.v:22.31-22.62"
+          }
+        },
+        "$flatten\\u_sar.$0$lookahead\\bn$20[9:0]$27": {
+          "hide_name": 1,
+          "bits": [ 316, 317, 318, 319, 320, 321, 322, 323, 324, 325 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:48.5-120.8"
+          }
+        },
+        "$flatten\\u_sar.$0$lookahead\\bp$21[9:0]$28": {
+          "hide_name": 1,
+          "bits": [ 306, 307, 308, 309, 310, 311, 312, 313, 314, 315 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:48.5-120.8"
+          }
+        },
+        "$flatten\\u_sar.$0$lookahead\\code$19[9:0]$26": {
+          "hide_name": 1,
+          "bits": [ 326, 327, 328, 329, 330, 331, 332, 333, 334, 335 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:48.5-120.8"
+          }
+        },
+        "$flatten\\u_sar.$0\\bit_idx[3:0]": {
+          "hide_name": 1,
+          "bits": [ 342, 343, 344, 345 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:48.5-120.8"
+          }
+        },
+        "$flatten\\u_sar.$0\\count[7:0]": {
+          "hide_name": 1,
+          "bits": [ 346, 347, 348, 349, 350, 351, 352, 353 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:48.5-120.8"
+          }
+        },
+        "$flatten\\u_sar.$0\\state[2:0]": {
+          "hide_name": 1,
+          "bits": [ 336, 337, 338 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:48.5-120.8"
+          }
+        },
+        "$flatten\\u_sar.$0\\valid[0:0]": {
+          "hide_name": 1,
+          "bits": [ 305 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:48.5-120.8"
+          }
+        },
+        "$flatten\\u_sar.$3$lookahead\\bn$20[9:0]$43": {
+          "hide_name": 1,
+          "bits": [ 490, 491, 492, 493, 494, 495, 496, 497, 498, 499 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:48.5-120.8"
+          }
+        },
+        "$flatten\\u_sar.$3$lookahead\\bp$21[9:0]$44": {
+          "hide_name": 1,
+          "bits": [ 511, 512, 513, 514, 515, 516, 517, 518, 519, 520 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:48.5-120.8"
+          }
+        },
+        "$flatten\\u_sar.$3$lookahead\\code$19[9:0]$42": {
+          "hide_name": 1,
+          "bits": [ 469, 470, 471, 472, 473, 474, 475, 476, 477, 478 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:48.5-120.8"
+          }
+        },
+        "$flatten\\u_sar.$4$lookahead\\bn$20[9:0]$59": {
+          "hide_name": 1,
+          "bits": [ 448, 449, 450, 451, 452, 453, 454, 455, 456, 457 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:48.5-120.8"
+          }
+        },
+        "$flatten\\u_sar.$4$lookahead\\bp$21[9:0]$60": {
+          "hide_name": 1,
+          "bits": [ 427, 428, 429, 430, 431, 432, 433, 434, 435, 436 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:48.5-120.8"
+          }
+        },
+        "$flatten\\u_sar.$5$lookahead\\bn$20[9:0]$63": {
+          "hide_name": 1,
+          "bits": [ 375, 376, 377, 378, 379, 380, 381, 382, 383, 384 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:48.5-120.8"
+          }
+        },
+        "$flatten\\u_sar.$5$lookahead\\bp$21[9:0]$64": {
+          "hide_name": 1,
+          "bits": [ 406, 407, 408, 409, 410, 411, 412, 413, 414, 415 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:48.5-120.8"
+          }
+        },
+        "$flatten\\u_sar.$add$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:81$46_Y": {
+          "hide_name": 1,
+          "bits": [ 102, 103, 104, 105, 106, 107, 108, 109 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:81.39-81.51"
+          }
+        },
+        "$flatten\\u_sar.$add$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:88$48_Y": {
+          "hide_name": 1,
+          "bits": [ 110, 111, 112, 113, 114, 115, 116, 117 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:88.39-88.51"
+          }
+        },
+        "$flatten\\u_sar.$and$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:101$68_Y": {
+          "hide_name": 1,
+          "bits": [ 128, 129, 130, 131, 132, 133, 134, 135, 136, 137 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:101.41-101.60"
+          }
+        },
+        "$flatten\\u_sar.$and$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:102$75_Y": {
+          "hide_name": 1,
+          "bits": [ 148, 149, 150, 151, 152, 153, 154, 155, 156, 157 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:102.41-102.60"
+          }
+        },
+        "$flatten\\u_sar.$and$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:97$52_Y": {
+          "hide_name": 1,
+          "bits": [ 168, 169, 170, 171, 172, 173, 174, 175, 176, 177 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:97.21-97.48"
+          }
+        },
+        "$flatten\\u_sar.$eq$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:77$45_Y": {
+          "hide_name": 1,
+          "bits": [ 178 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:77.25-77.51"
+          }
+        },
+        "$flatten\\u_sar.$eq$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:85$47_Y": {
+          "hide_name": 1,
+          "bits": [ 179 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:85.25-85.55"
+          }
+        },
+        "$flatten\\u_sar.$ne$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:99$56_Y": {
+          "hide_name": 1,
+          "bits": [ 184 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:99.25-99.40"
+          }
+        },
+        "$flatten\\u_sar.$neg$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:101$65_Y": {
+          "hide_name": 1,
+          "bits": [ 185, 186, 187, 188, 189 ],
+          "signed": 1,
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:101.41-101.60"
+          }
+        },
+        "$flatten\\u_sar.$neg$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:101$69_Y": {
+          "hide_name": 1,
+          "bits": [ 190, 191, 192, 193, 194 ],
+          "signed": 1,
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:101.41-101.60"
+          }
+        },
+        "$flatten\\u_sar.$neg$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:102$72_Y": {
+          "hide_name": 1,
+          "bits": [ 195, 196, 197, 198, 199 ],
+          "signed": 1,
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:102.41-102.60"
+          }
+        },
+        "$flatten\\u_sar.$neg$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:102$76_Y": {
+          "hide_name": 1,
+          "bits": [ 200, 201, 202, 203, 204 ],
+          "signed": 1,
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:102.41-102.60"
+          }
+        },
+        "$flatten\\u_sar.$neg$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:97$49_Y": {
+          "hide_name": 1,
+          "bits": [ 205, 206, 207, 208, 209 ],
+          "signed": 1,
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:97.21-97.48"
+          }
+        },
+        "$flatten\\u_sar.$neg$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:97$53_Y": {
+          "hide_name": 1,
+          "bits": [ 210, 211, 212, 213, 214 ],
+          "signed": 1,
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:97.21-97.48"
+          }
+        },
+        "$flatten\\u_sar.$not$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:101$67_Y": {
+          "hide_name": 1,
+          "bits": [ 118, 119, 120, 121, 122, 123, 124, 125, 126, 127 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:101.41-101.60"
+          }
+        },
+        "$flatten\\u_sar.$not$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:102$74_Y": {
+          "hide_name": 1,
+          "bits": [ 138, 139, 140, 141, 142, 143, 144, 145, 146, 147 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:102.41-102.60"
+          }
+        },
+        "$flatten\\u_sar.$not$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:97$51_Y": {
+          "hide_name": 1,
+          "bits": [ 158, 159, 160, 161, 162, 163, 164, 165, 166, 167 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:97.21-97.48"
+          }
+        },
+        "$flatten\\u_sar.$or$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:101$71_Y": {
+          "hide_name": 1,
+          "bits": [ 255, 256, 257, 258, 259, 260, 261, 262, 263, 264 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:101.41-101.60"
+          }
+        },
+        "$flatten\\u_sar.$or$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:102$78_Y": {
+          "hide_name": 1,
+          "bits": [ 275, 276, 277, 278, 279, 280, 281, 282, 283, 284 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:102.41-102.60"
+          }
+        },
+        "$flatten\\u_sar.$or$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:97$55_Y": {
+          "hide_name": 1,
+          "bits": [ 295, 296, 297, 298, 299, 300, 301, 302, 303, 304 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:97.21-97.48"
+          }
+        },
+        "$flatten\\u_sar.$procmux$105_Y": {
+          "hide_name": 1,
+          "bits": [ 354, 355, 356, 357, 358, 359, 360, 361, 362, 363 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$107_Y": {
+          "hide_name": 1,
+          "bits": [ 364, 365, 366, 367, 368, 369, 370, 371, 372, 373 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$110_CMP": {
+          "hide_name": 1,
+          "bits": [ 374 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$125_Y": {
+          "hide_name": 1,
+          "bits": [ 385, 386, 387, 388, 389, 390, 391, 392, 393, 394 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$127_Y": {
+          "hide_name": 1,
+          "bits": [ 395, 396, 397, 398, 399, 400, 401, 402, 403, 404 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$130_CMP": {
+          "hide_name": 1,
+          "bits": [ 405 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$144_Y": {
+          "hide_name": 1,
+          "bits": [ 416, 417, 418, 419, 420, 421, 422, 423, 424, 425 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$147_CMP": {
+          "hide_name": 1,
+          "bits": [ 426 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$151_Y": {
+          "hide_name": 1,
+          "bits": [ 437, 438, 439, 440, 441, 442, 443, 444, 445, 446 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$154_CMP": {
+          "hide_name": 1,
+          "bits": [ 447 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$176_Y": {
+          "hide_name": 1,
+          "bits": [ 458, 459, 460, 461, 462, 463, 464, 465, 466, 467 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$179_CMP": {
+          "hide_name": 1,
+          "bits": [ 468 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$187_Y": {
+          "hide_name": 1,
+          "bits": [ 479, 480, 481, 482, 483, 484, 485, 486, 487, 488 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$190_CMP": {
+          "hide_name": 1,
+          "bits": [ 489 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$198_Y": {
+          "hide_name": 1,
+          "bits": [ 500, 501, 502, 503, 504, 505, 506, 507, 508, 509 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$201_CMP": {
+          "hide_name": 1,
+          "bits": [ 510 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$205_CMP": {
+          "hide_name": 1,
+          "bits": [ 521 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$206_CMP": {
+          "hide_name": 1,
+          "bits": [ 522 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$207_CMP": {
+          "hide_name": 1,
+          "bits": [ 523 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$211_CMP": {
+          "hide_name": 1,
+          "bits": [ 524 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$212_CMP": {
+          "hide_name": 1,
+          "bits": [ 525 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$213_CMP": {
+          "hide_name": 1,
+          "bits": [ 526 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$217_CMP": {
+          "hide_name": 1,
+          "bits": [ 527 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$218_CMP": {
+          "hide_name": 1,
+          "bits": [ 528 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$233_CMP": {
+          "hide_name": 1,
+          "bits": [ 529 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$242_Y": {
+          "hide_name": 1,
+          "bits": [ 530, 531, 532, 533, 534, 535, 536, 537 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$245_CMP": {
+          "hide_name": 1,
+          "bits": [ 562 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$247_Y": {
+          "hide_name": 1,
+          "bits": [ 538, 539, 540, 541, 542, 543, 544, 545 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$249_CMP": {
+          "hide_name": 1,
+          "bits": [ 563 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$251_Y": {
+          "hide_name": 1,
+          "bits": [ 546, 547, 548, 549, 550, 551, 552, 553 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$253_CMP": {
+          "hide_name": 1,
+          "bits": [ 564 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$255_Y": {
+          "hide_name": 1,
+          "bits": [ 554, 555, 556, 557, 558, 559, 560, 561 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$257_CMP": {
+          "hide_name": 1,
+          "bits": [ 565 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$261_Y": {
+          "hide_name": 1,
+          "bits": [ 570, 571, 572, 573 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$264_CMP": {
+          "hide_name": 1,
+          "bits": [ 578 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$266_Y": {
+          "hide_name": 1,
+          "bits": [ 574, 575, 576, 577 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$268_CMP": {
+          "hide_name": 1,
+          "bits": [ 579 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$272_Y": {
+          "hide_name": 1,
+          "bits": [ 580, 581, 582 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$275_CMP": {
+          "hide_name": 1,
+          "bits": [ 592 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$276_CMP": {
+          "hide_name": 1,
+          "bits": [ 593 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$278_Y": {
+          "hide_name": 1,
+          "bits": [ 583, 584, 585 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$280_CMP": {
+          "hide_name": 1,
+          "bits": [ 594 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$282_Y": {
+          "hide_name": 1,
+          "bits": [ 586, 587, 588 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$284_CMP": {
+          "hide_name": 1,
+          "bits": [ 595 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$286_Y": {
+          "hide_name": 1,
+          "bits": [ 589, 590, 591 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$procmux$288_CMP": {
+          "hide_name": 1,
+          "bits": [ 596 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_sar.$shift$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:101$66_Y": {
+          "hide_name": 1,
+          "bits": [ 215, 216, 217, 218, 219, 220, 221, 222, 223, 224 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:101.41-101.60"
+          }
+        },
+        "$flatten\\u_sar.$shift$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:101$70_Y": {
+          "hide_name": 1,
+          "bits": [ 245, 246, 247, 248, 249, 250, 251, 252, 253, 254 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:101.41-101.60"
+          }
+        },
+        "$flatten\\u_sar.$shift$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:102$73_Y": {
+          "hide_name": 1,
+          "bits": [ 225, 226, 227, 228, 229, 230, 231, 232, 233, 234 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:102.41-102.60"
+          }
+        },
+        "$flatten\\u_sar.$shift$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:102$77_Y": {
+          "hide_name": 1,
+          "bits": [ 265, 266, 267, 268, 269, 270, 271, 272, 273, 274 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:102.41-102.60"
+          }
+        },
+        "$flatten\\u_sar.$shift$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:97$50_Y": {
+          "hide_name": 1,
+          "bits": [ 235, 236, 237, 238, 239, 240, 241, 242, 243, 244 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:97.21-97.48"
+          }
+        },
+        "$flatten\\u_sar.$shift$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:97$54_Y": {
+          "hide_name": 1,
+          "bits": [ 285, 286, 287, 288, 289, 290, 291, 292, 293, 294 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:97.21-97.48"
+          }
+        },
+        "$flatten\\u_sar.$sub$/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:103$79_Y": {
+          "hide_name": 1,
+          "bits": [ 566, 567, 568, 569 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:103.36-103.50"
+          }
+        },
+        "$flatten\\u_spi.$0\\mosi_reg[9:0]": {
+          "hide_name": 1,
+          "bits": [ 624, 625, 626, 627, 628, 629, 630, 631, 632, 633 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/spi/spi_slave.v:40.5-43.8"
+          }
+        },
+        "$flatten\\u_spi.$0\\offset[9:0]": {
+          "hide_name": 1,
+          "bits": [ 614, 615, 616, 617, 618, 619, 620, 621, 622, 623 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/spi/spi_slave.v:46.5-49.8"
+          }
+        },
+        "$flatten\\u_spi.$1\\bit_cnt[7:0]": {
+          "hide_name": 1,
+          "bits": [ 664, 665, 666, 667, 668, 669, 670, 671 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/spi/spi_slave.v:30.5-37.8"
+          }
+        },
+        "$flatten\\u_spi.$1\\done[0:0]": {
+          "hide_name": 1,
+          "bits": [ 672 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/spi/spi_slave.v:30.5-37.8"
+          }
+        },
+        "$flatten\\u_spi.$1\\shift_reg[9:0]": {
+          "hide_name": 1,
+          "bits": [ 644, 645, 646, 647, 648, 649, 650, 651, 652, 653 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/spi/spi_slave.v:30.5-37.8"
+          }
+        },
+        "$flatten\\u_spi.$add$/foss/designs/xschem/SAR_ADC/src/spi/spi_slave.v:33$5_Y": {
+          "hide_name": 1,
+          "bits": [ 605, 606, 607, 608, 609, 610, 611, 612 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/spi/spi_slave.v:33.26-33.40"
+          }
+        },
+        "$flatten\\u_spi.$eq$/foss/designs/xschem/SAR_ADC/src/spi/spi_slave.v:34$6_Y": {
+          "hide_name": 1,
+          "bits": [ 613 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/spi/spi_slave.v:34.17-34.31"
+          }
+        },
+        "$flatten\\u_spi.$procmux$93_Y": {
+          "hide_name": 1,
+          "bits": [ 684 ],
+          "attributes": {
+          }
+        },
+        "bist_en": {
+          "hide_name": 0,
+          "bits": [ "0" ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/digital_wrapper.v:36.17-36.24"
+          }
+        },
+        "bn0": {
+          "hide_name": 0,
+          "bits": [ 29 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/digital_wrapper.v:34.17-34.20"
+          }
+        },
+        "bn1": {
+          "hide_name": 0,
+          "bits": [ 28 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/digital_wrapper.v:33.17-33.20"
+          }
+        },
+        "bn2": {
+          "hide_name": 0,
+          "bits": [ 27 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/digital_wrapper.v:32.17-32.20"
+          }
+        },
+        "bn3": {
+          "hide_name": 0,
+          "bits": [ 26 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/digital_wrapper.v:31.17-31.20"
+          }
+        },
+        "bn4": {
+          "hide_name": 0,
+          "bits": [ 25 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/digital_wrapper.v:30.17-30.20"
+          }
+        },
+        "bn5": {
+          "hide_name": 0,
+          "bits": [ 24 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/digital_wrapper.v:29.17-29.20"
+          }
+        },
+        "bn6": {
+          "hide_name": 0,
+          "bits": [ 23 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/digital_wrapper.v:28.17-28.20"
+          }
+        },
+        "bn7": {
+          "hide_name": 0,
+          "bits": [ 22 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/digital_wrapper.v:27.17-27.20"
+          }
+        },
+        "bn8": {
+          "hide_name": 0,
+          "bits": [ 21 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/digital_wrapper.v:26.17-26.20"
+          }
+        },
+        "bn9": {
+          "hide_name": 0,
+          "bits": [ 20 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/digital_wrapper.v:25.17-25.20"
+          }
+        },
+        "bn_bus": {
+          "hide_name": 0,
+          "bits": [ 29, 28, 27, 26, 25, 24, 23, 22, 21, 20 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/digital_wrapper.v:46.18-46.24"
+          }
+        },
+        "bp0": {
+          "hide_name": 0,
+          "bits": [ 19 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/digital_wrapper.v:23.17-23.20"
+          }
+        },
+        "bp1": {
+          "hide_name": 0,
+          "bits": [ 18 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/digital_wrapper.v:22.17-22.20"
+          }
+        },
+        "bp2": {
+          "hide_name": 0,
+          "bits": [ 17 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/digital_wrapper.v:21.17-21.20"
+          }
+        },
+        "bp3": {
+          "hide_name": 0,
+          "bits": [ 16 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/digital_wrapper.v:20.17-20.20"
+          }
+        },
+        "bp4": {
+          "hide_name": 0,
+          "bits": [ 15 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/digital_wrapper.v:19.17-19.20"
+          }
+        },
+        "bp5": {
+          "hide_name": 0,
+          "bits": [ 14 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/digital_wrapper.v:18.17-18.20"
+          }
+        },
+        "bp6": {
+          "hide_name": 0,
+          "bits": [ 13 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/digital_wrapper.v:17.17-17.20"
+          }
+        },
+        "bp7": {
+          "hide_name": 0,
+          "bits": [ 12 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/digital_wrapper.v:16.17-16.20"
+          }
+        },
+        "bp8": {
+          "hide_name": 0,
+          "bits": [ 11 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/digital_wrapper.v:15.17-15.20"
+          }
+        },
+        "bp9": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/digital_wrapper.v:14.17-14.20"
+          }
+        },
+        "bp_bus": {
+          "hide_name": 0,
+          "bits": [ 19, 18, 17, 16, 15, 14, 13, 12, 11, 10 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/digital_wrapper.v:45.18-45.24"
+          }
+        },
+        "cal_result": {
+          "hide_name": 0,
+          "bits": [ 71, 72, 73, 74, 75, 76, 77, 78, 79, 80 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/digital_wrapper.v:41.18-41.28"
+          }
+        },
+        "cal_valid": {
+          "hide_name": 0,
+          "bits": [ 82 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/digital_wrapper.v:42.18-42.27"
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/digital_wrapper.v:4.17-4.20"
+          }
+        },
+        "comp_in": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/digital_wrapper.v:7.17-7.24"
+          }
+        },
+        "cs_n": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/digital_wrapper.v:10.17-10.21"
+          }
+        },
+        "miso": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/digital_wrapper.v:12.17-12.21"
+          }
+        },
+        "mosi": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/digital_wrapper.v:11.17-11.21"
+          }
+        },
+        "offset": {
+          "hide_name": 0,
+          "bits": [ 40, 41, 42, 43, 44, 45, 46, 47, 48, 49 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/digital_wrapper.v:43.18-43.24"
+          }
+        },
+        "rst_n": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/digital_wrapper.v:5.17-5.22"
+          }
+        },
+        "sar_result": {
+          "hide_name": 0,
+          "bits": [ 30, 31, 32, 33, 34, 35, 36, 37, 38, 39 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/digital_wrapper.v:39.18-39.28"
+          }
+        },
+        "sar_valid": {
+          "hide_name": 0,
+          "bits": [ 83 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/digital_wrapper.v:40.18-40.27"
+          }
+        },
+        "sclk": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/digital_wrapper.v:9.17-9.21"
+          }
+        },
+        "start": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/digital_wrapper.v:6.17-6.22"
+          }
+        },
+        "u_sar.bit_idx": {
+          "hide_name": 0,
+          "bits": [ 180, 181, 182, 183 ],
+          "attributes": {
+            "hdlname": "u_sar bit_idx",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:45.15-45.22"
+          }
+        },
+        "u_sar.count": {
+          "hide_name": 0,
+          "bits": [ 94, 95, 96, 97, 98, 99, 100, 101 ],
+          "attributes": {
+            "hdlname": "u_sar count",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:46.15-46.20"
+          }
+        },
+        "u_sar.state": {
+          "hide_name": 0,
+          "bits": [ 339, 340, 341 ],
+          "attributes": {
+            "hdlname": "u_sar state",
+            "src": "/foss/designs/xschem/SAR_ADC/src/sar_fsm/sar_fsm.v:44.15-44.20"
+          }
+        },
+        "u_spi.bit_cnt": {
+          "hide_name": 0,
+          "bits": [ 597, 598, 599, 600, 601, 602, 603, 604 ],
+          "attributes": {
+            "hdlname": "u_spi bit_cnt",
+            "src": "/foss/designs/xschem/SAR_ADC/src/spi/spi_slave.v:14.17-14.24"
+          }
+        },
+        "u_spi.data_latch": {
+          "hide_name": 0,
+          "bits": [ 674, 675, 676, 677, 678, 679, 680, 681, 682, 683 ],
+          "attributes": {
+            "hdlname": "u_spi data_latch",
+            "src": "/foss/designs/xschem/SAR_ADC/src/spi/spi_slave.v:13.17-13.27"
+          }
+        },
+        "u_spi.done": {
+          "hide_name": 0,
+          "bits": [ 673 ],
+          "attributes": {
+            "hdlname": "u_spi done",
+            "src": "/foss/designs/xschem/SAR_ADC/src/spi/spi_slave.v:15.17-15.21"
+          }
+        },
+        "u_spi.mosi_reg": {
+          "hide_name": 0,
+          "bits": [ 634, 635, 636, 637, 638, 639, 640, 641, 642, 643 ],
+          "attributes": {
+            "hdlname": "u_spi mosi_reg",
+            "src": "/foss/designs/xschem/SAR_ADC/src/spi/spi_slave.v:12.17-12.25"
+          }
+        },
+        "u_spi.shift_reg": {
+          "hide_name": 0,
+          "bits": [ 654, 655, 656, 657, 658, 659, 660, 661, 662, 663 ],
+          "attributes": {
+            "hdlname": "u_spi shift_reg",
+            "src": "/foss/designs/xschem/SAR_ADC/src/spi/spi_slave.v:11.17-11.26"
+          }
+        }
+      }
+    }
+  }
+}
