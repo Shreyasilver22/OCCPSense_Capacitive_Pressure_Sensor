@@ -1,5 +1,0 @@
-`verilator_config
-lint_off -rule DECLFILENAME
-lint_off -rule EOFNEWLINE
-lint_off -rule UNDRIVEN -file "/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v"
-lint_off -rule UNUSEDSIGNAL -file "/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-24-26/tmp/9e117e99769e48abaedc2cbcc480f4d2.bb.v"
