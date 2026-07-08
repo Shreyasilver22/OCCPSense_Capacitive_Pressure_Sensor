@@ -1,9 +1,9 @@
-v {xschem version=3.4.8RC file_version=1.3}
+v {xschem version=3.4.5 file_version=1.2
+}
 G {}
 K {}
 V {}
 S {}
-F {}
 E {}
 N -0 -40 0 -20 {lab=out}
 N -100 -100 -40 -100 {lab=in}
@@ -22,8 +22,8 @@ N 20 10 20 60 {lab=gnd}
 N 0 60 20 60 {lab=gnd}
 N 0 40 0 60 {lab=gnd}
 C {/foss/pdks/gf180mcuD/libs.tech/xschem/symbols/pfet_03v3.sym} -20 -100 0 0 {name=M1
-L=0.28u
-W=0.22u
+L=1u
+W=5u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
