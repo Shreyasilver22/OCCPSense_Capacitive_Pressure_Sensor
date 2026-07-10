@@ -41,6 +41,19 @@ module digital_wrapper #(parameter N = 10, parameter INVERT_COMP = 1'b0) (
     wire [N-1:0] cal_result;
     wire         cal_valid;
     wire [N-1:0] offset;
+
+    reg [N-1:0] result_hold;
+    reg         result_ready;
+
+    always @(posedge clk or negedge rst_n) begin
+        if (!rst_n) begin
+            result_hold  <= 0;
+            result_ready <= 0;
+        end else if (cal_valid) begin
+            result_hold  <= cal_result;
+            result_ready <= 1'b1;
+        end
+    end
     
     wire [N-1:0] bp_bus;
     wire [N-1:0] bn_bus;
@@ -81,8 +94,8 @@ module digital_wrapper #(parameter N = 10, parameter INVERT_COMP = 1'b0) (
         .cs_n     (cs_n),
         .mosi     (mosi),
         .miso     (miso),
-        .data_in  (cal_result),
-        .valid    (cal_valid),
+        .data_in  (result_hold),
+        .valid    (result_ready),
         .offset   (offset)
     );
 

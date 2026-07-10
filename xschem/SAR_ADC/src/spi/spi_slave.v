@@ -11,7 +11,6 @@ module spi_slave #(parameter N = 10) (
 
     reg [N-1:0] shift_reg;
     reg [N-1:0] mosi_reg;
-    reg [N-1:0] data_latch;
     reg [7:0]   bit_cnt;
     reg         cs_n_prev;
 
@@ -23,17 +22,12 @@ module spi_slave #(parameter N = 10) (
             bit_cnt   <= 0;
             offset    <= 0;
             cs_n_prev <= 1'b1;
-            data_latch <= 0;
         end else begin
             cs_n_prev <= cs_n;
 
-            // latch fresh data when valid
-            if (valid)
-                data_latch <= data_in;
-
             if (cs_n_prev && !cs_n) begin
                 // falling edge of cs_n — load
-                shift_reg <= data_latch;
+                shift_reg <= data_in;
                 bit_cnt   <= 8'd0;
             end else if (!cs_n) begin
                 // active transaction — shift
