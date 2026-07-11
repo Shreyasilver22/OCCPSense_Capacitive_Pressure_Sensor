@@ -1,0 +1,7 @@
+set circuit1 [readnet spice /foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-59-41/68-magic-spiceextraction/digital_wrapper.spice]
+set circuit2 [readnet verilog /dev/null]
+puts "Reading SPICE netlist file '/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/spice/gf180mcu_fd_sc_mcu7t5v0.spice'..."
+readnet spice /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/spice/gf180mcu_fd_sc_mcu7t5v0.spice $circuit2
+puts "Reading Verilog netlist file '/foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-59-41/52-openroad-fillinsertion/digital_wrapper.pnl.v'..."
+readnet verilog /foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-59-41/52-openroad-fillinsertion/digital_wrapper.pnl.v $circuit2
+lvs "$circuit1 digital_wrapper" "$circuit2 digital_wrapper" /usr/local/lib/python3.12/dist-packages/librelane/scripts/netgen/setup.tcl /foss/designs/openlane/digital_wrapper/runs/RUN_2026-06-29_12-59-41/70-netgen-lvs/reports/lvs.netgen.rpt -blackbox -json

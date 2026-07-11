@@ -1,0 +1,76 @@
+###############################################################################
+# Created by write_sdc
+###############################################################################
+current_design digital_wrapper
+###############################################################################
+# Timing Constraints
+###############################################################################
+create_clock -name clk -period 100.0000 [get_ports {clk}]
+set_clock_transition 0.1500 [get_clocks {clk}]
+set_clock_uncertainty 0.2500 clk
+set_input_delay 20.0000 -clock [get_clocks {clk}] -add_delay [get_ports {comp_in}]
+set_input_delay 20.0000 -clock [get_clocks {clk}] -add_delay [get_ports {cs_n}]
+set_input_delay 20.0000 -clock [get_clocks {clk}] -add_delay [get_ports {mosi}]
+set_input_delay 20.0000 -clock [get_clocks {clk}] -add_delay [get_ports {rst_n}]
+set_input_delay 20.0000 -clock [get_clocks {clk}] -add_delay [get_ports {sclk}]
+set_input_delay 20.0000 -clock [get_clocks {clk}] -add_delay [get_ports {start}]
+set_output_delay 20.0000 -clock [get_clocks {clk}] -add_delay [get_ports {bist_en}]
+set_output_delay 20.0000 -clock [get_clocks {clk}] -add_delay [get_ports {bn0}]
+set_output_delay 20.0000 -clock [get_clocks {clk}] -add_delay [get_ports {bn1}]
+set_output_delay 20.0000 -clock [get_clocks {clk}] -add_delay [get_ports {bn2}]
+set_output_delay 20.0000 -clock [get_clocks {clk}] -add_delay [get_ports {bn3}]
+set_output_delay 20.0000 -clock [get_clocks {clk}] -add_delay [get_ports {bn4}]
+set_output_delay 20.0000 -clock [get_clocks {clk}] -add_delay [get_ports {bn5}]
+set_output_delay 20.0000 -clock [get_clocks {clk}] -add_delay [get_ports {bn6}]
+set_output_delay 20.0000 -clock [get_clocks {clk}] -add_delay [get_ports {bn7}]
+set_output_delay 20.0000 -clock [get_clocks {clk}] -add_delay [get_ports {bn8}]
+set_output_delay 20.0000 -clock [get_clocks {clk}] -add_delay [get_ports {bn9}]
+set_output_delay 20.0000 -clock [get_clocks {clk}] -add_delay [get_ports {bp0}]
+set_output_delay 20.0000 -clock [get_clocks {clk}] -add_delay [get_ports {bp1}]
+set_output_delay 20.0000 -clock [get_clocks {clk}] -add_delay [get_ports {bp2}]
+set_output_delay 20.0000 -clock [get_clocks {clk}] -add_delay [get_ports {bp3}]
+set_output_delay 20.0000 -clock [get_clocks {clk}] -add_delay [get_ports {bp4}]
+set_output_delay 20.0000 -clock [get_clocks {clk}] -add_delay [get_ports {bp5}]
+set_output_delay 20.0000 -clock [get_clocks {clk}] -add_delay [get_ports {bp6}]
+set_output_delay 20.0000 -clock [get_clocks {clk}] -add_delay [get_ports {bp7}]
+set_output_delay 20.0000 -clock [get_clocks {clk}] -add_delay [get_ports {bp8}]
+set_output_delay 20.0000 -clock [get_clocks {clk}] -add_delay [get_ports {bp9}]
+set_output_delay 20.0000 -clock [get_clocks {clk}] -add_delay [get_ports {miso}]
+###############################################################################
+# Environment
+###############################################################################
+set_load -pin_load 0.0729 [get_ports {bist_en}]
+set_load -pin_load 0.0729 [get_ports {bn0}]
+set_load -pin_load 0.0729 [get_ports {bn1}]
+set_load -pin_load 0.0729 [get_ports {bn2}]
+set_load -pin_load 0.0729 [get_ports {bn3}]
+set_load -pin_load 0.0729 [get_ports {bn4}]
+set_load -pin_load 0.0729 [get_ports {bn5}]
+set_load -pin_load 0.0729 [get_ports {bn6}]
+set_load -pin_load 0.0729 [get_ports {bn7}]
+set_load -pin_load 0.0729 [get_ports {bn8}]
+set_load -pin_load 0.0729 [get_ports {bn9}]
+set_load -pin_load 0.0729 [get_ports {bp0}]
+set_load -pin_load 0.0729 [get_ports {bp1}]
+set_load -pin_load 0.0729 [get_ports {bp2}]
+set_load -pin_load 0.0729 [get_ports {bp3}]
+set_load -pin_load 0.0729 [get_ports {bp4}]
+set_load -pin_load 0.0729 [get_ports {bp5}]
+set_load -pin_load 0.0729 [get_ports {bp6}]
+set_load -pin_load 0.0729 [get_ports {bp7}]
+set_load -pin_load 0.0729 [get_ports {bp8}]
+set_load -pin_load 0.0729 [get_ports {bp9}]
+set_load -pin_load 0.0729 [get_ports {miso}]
+set_driving_cell -lib_cell gf180mcu_fd_sc_mcu7t5v0__inv_4 -pin {ZN} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {clk}]
+set_driving_cell -lib_cell gf180mcu_fd_sc_mcu7t5v0__inv_1 -pin {ZN} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {comp_in}]
+set_driving_cell -lib_cell gf180mcu_fd_sc_mcu7t5v0__inv_1 -pin {ZN} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {cs_n}]
+set_driving_cell -lib_cell gf180mcu_fd_sc_mcu7t5v0__inv_1 -pin {ZN} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {mosi}]
+set_driving_cell -lib_cell gf180mcu_fd_sc_mcu7t5v0__inv_1 -pin {ZN} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {rst_n}]
+set_driving_cell -lib_cell gf180mcu_fd_sc_mcu7t5v0__inv_1 -pin {ZN} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {sclk}]
+set_driving_cell -lib_cell gf180mcu_fd_sc_mcu7t5v0__inv_1 -pin {ZN} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {start}]
+###############################################################################
+# Design Rules
+###############################################################################
+set_max_transition 3.0000 [current_design]
+set_max_capacitance 0.2000 [current_design]
+set_max_fanout 10.0000 [current_design]

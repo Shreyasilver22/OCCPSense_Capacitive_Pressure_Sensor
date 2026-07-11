@@ -1,0 +1,18 @@
+{
+  "DESIGN_NAME": "digital_wrapper",
+  "VERILOG_FILES": [
+    "dir::../../xschem/SAR_ADC/src/sar_fsm/digital_wrapper.v",
+    "dir::../../xschem/SAR_ADC/src/sar_fsm/sar_fsm.v",
+    "dir::../../xschem/SAR_ADC/src/spi/spi_slave.v",
+    "dir::../../xschem/SAR_ADC/src/calibration/digital_cal.v"
+  ],
+  "CLOCK_PORT": "clk",
+  "CLOCK_PERIOD": 100.0,
+  "PDK": "gf180mcuD",
+  "STD_CELL_LIBRARY": "gf180mcu_fd_sc_mcu7t5v0",
+  "PDN_MULTILAYER": true,
+  "FP_SIZING": "relative",
+  "FP_CORE_UTIL": 40,
+  "PL_TARGET_DENSITY_PCT": 45,
+  "QUIT_ON_SYNTH_CHECKS": false
+}
