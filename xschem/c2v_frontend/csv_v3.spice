@@ -1,0 +1,96 @@
+** sch_path: /foss/designs/csv_v3
+**.subckt csv_v3
+V3 TGIP 0 sin(2 0.01 10k)
+C1 net4 net2 500p
+C4 net3 net7 500p
+E1 net5 Vcm net4 net3 100k
+E2 net6 Vcm net3 net4 100k
+V1 phi1 0 PULSE( 0 1.05 0u 100ns 100ns 2us 5us 10000 )
+V2 phi2 0 PULSE( 0 1.05 2.50us 100ns 100ns 2us 5us 10000 )
+V4 TGIN 0 sin(-2 0.01 10k)
+V5 opvdd 0 -0.825
+V6 Vcm 0 0.825
+x1 phi1bar tgvdd TGIP net2 0 phi1 TG
+x2 phi1bar tgvdd TGIN net7 0 phi1 TG
+x3 phi2bar tgvdd net2 opvdd 0 phi2 TG
+x4 phi1bar tgvdd net4 opvdd 0 phi1 TG
+x5 phi2bar tgvdd net7 opvdd 0 phi2 TG
+x6 phi1bar tgvdd net3 opvdd 0 phi1 TG
+x7 tgvdd phi1 phi1bar 0 inverter
+V7 tgvdd 0 3.3
+x8 tgvdd phi2 phi2bar 0 inverter
+x9 phi1bar tgvdd net1 0 0 phi1 TG
+x10 phi1bar tgvdd net8 0 0 phi1 TG
+x11 phi2bar tgvdd net5 Voutp 0 phi2 TG
+x12 phi2bar tgvdd net6 Voutn 0 phi2 TG
+x13 phi2bar tgvdd net1 net5 0 phi2 TG
+x14 phi2bar tgvdd net8 net6 0 phi2 TG
+XC5 net4 net1 cap_mim_2f0fF c_width=1e-6 c_length=1e-6
+XC2 net3 net8 cap_mim_2f0fF c_width=1e-6 c_length=1e-6
+**** begin user architecture code
+
+
+.temp 85
+.model sw sw(vt=1.65 ron=0.01 roff=10G)
+
+.control
+save all
+tran 10n 30u
+write Differential_SC_AMplifier_tgswitch.raw
+let vdiffout=v(voutp)-v(voutn)
+plot v(voutp) v(voutn)
+plot v(diffout)
+.endc
+.end
+
+
+
+.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice res_typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice moscap_typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice diode_typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice cap_mim
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice mimcap_typical
+
+.include /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/spice/gf180mcu_fd_io.spice
+.options rshunt=1e12 reltol=1e-3 abstol=1e-12
+Rout vout cdout 500
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  TG.sym # of pins=6
+** sym_path: /foss/designs/TG.sym
+** sch_path: /foss/designs/TG.sch
+.subckt TG phibar Vdd In Out Gnd phi
+*.ipin In
+*.opin Out
+*.iopin phi
+*.iopin phibar
+*.iopin Vdd
+*.iopin Gnd
+XM1 Out phi In Gnd nfet_03v3 L=0.34u W=2u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XM2 Out phibar In Vdd pfet_03v3 L=0.34u W=4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+.ends
+
+
+* expanding   symbol:  inverter.sym # of pins=4
+** sym_path: /foss/designs/inverter.sym
+** sch_path: /foss/designs/inverter.sch
+.subckt inverter vdd in out gnd
+*.iopin vdd
+*.iopin gnd
+*.ipin in
+*.opin out
+XM1 out in vdd vdd pfet_03v3 L=0.56u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XM2 out in gnd gnd nfet_03v3 L=0.28u W=0.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+.ends
+
+.end
