@@ -1,0 +1,331 @@
+v {xschem version=3.4.8RC file_version=1.3}
+G {}
+K {}
+V {}
+S {}
+F {}
+E {}
+N -1385 -1210 -1255 -1210 {lab=#net1}
+N -1965 -1180 -1915 -1180 {lab=#net2}
+N -1915 -1310 -1915 -1180 {lab=#net2}
+N -1775 -340 -1695 -340 {lab=#net3}
+N -1385 -690 -1295 -690 {lab=#net4}
+N -1545 -1210 -1545 -1060 {lab=#net5}
+N -1540 -690 -1445 -690 {lab=#net3}
+N -1545 -1210 -1445 -1210 {lab=#net5}
+N -1755 -910 -1755 -810 {lab=opvdd}
+N -1755 -810 -1655 -810 {lab=opvdd}
+N -2305 -1180 -2305 -1140 {lab=TGIP}
+N -2335 -1180 -2305 -1180 {lab=TGIP}
+N -2005 -1100 -1965 -1100 {lab=#net2}
+N -1965 -1180 -1965 -1100 {lab=#net2}
+N -2355 -250 -2355 -230 {lab=TGIN}
+N -2365 -230 -2355 -230 {lab=TGIN}
+N -2405 -250 -2355 -250 {lab=TGIN}
+N -2405 -360 -2405 -250 {lab=TGIN}
+N -1875 -810 -1875 -740 {lab=opvdd}
+N -1875 -1250 -1795 -1250 {lab=#net2}
+N -1875 -1310 -1875 -1250 {lab=#net2}
+N -1915 -1310 -1875 -1310 {lab=#net2}
+N -1735 -1250 -1545 -1250 {lab=#net5}
+N -1845 -950 -1845 -910 {lab=opvdd}
+N -1755 -910 -1655 -910 {lab=opvdd}
+N -1655 -950 -1655 -910 {lab=opvdd}
+N -1845 -910 -1755 -910 {lab=opvdd}
+N -1545 -1250 -1545 -1210 {lab=#net5}
+N -1925 -340 -1835 -340 {lab=#net6}
+N -1695 -360 -1695 -340 {lab=#net3}
+N -1885 -740 -1885 -670 {lab=opvdd}
+N -1885 -740 -1875 -740 {lab=opvdd}
+N -1655 -810 -1655 -660 {lab=opvdd}
+N -1875 -810 -1755 -810 {lab=opvdd}
+N -2105 -320 -1925 -320 {lab=#net6}
+N -1925 -340 -1925 -320 {lab=#net6}
+N -1925 -370 -1925 -340 {lab=#net6}
+N -1695 -340 -1545 -340 {lab=#net3}
+N -1545 -690 -1545 -340 {lab=#net3}
+N -1105 -1530 -1005 -1530 {lab=0}
+N -1105 -1530 -1105 -1490 {lab=0}
+N -1255 -1190 -1145 -1190 {lab=#net1}
+N -1255 -1210 -1255 -1190 {lab=#net1}
+N -1005 -1530 -1005 -1500 {lab=0}
+N -1085 -1500 -1005 -1500 {lab=0}
+N -1085 -1500 -1085 -1490 {lab=0}
+N -1435 -155 -1335 -155 {lab=0}
+N -1335 -195 -1335 -155 {lab=0}
+N -1435 -185 -1355 -185 {lab=0}
+N -1355 -195 -1355 -185 {lab=0}
+N -1435 -185 -1435 -155 {lab=0}
+N -530 -980 -460 -980 {lab=Voutp}
+N -460 -980 -460 -970 {lab=Voutp}
+N -540 -760 -470 -760 {lab=Voutn}
+N -470 -760 -470 -750 {lab=Voutn}
+N -1130 -850 -1025 -850 {lab=#net7}
+N -1025 -855 -1025 -850 {lab=#net7}
+N -830 -1020 -830 -855 {lab=#net7}
+N -1025 -855 -830 -855 {lab=#net7}
+N -1025 -900 -1025 -855 {lab=#net7}
+N -1110 -1200 -985 -1200 {lab=#net1}
+N -1110 -1200 -1110 -1150 {lab=#net1}
+N -1255 -1190 -1255 -1150 {lab=#net1}
+N -1255 -1150 -1110 -1150 {lab=#net1}
+N -1020 -640 -850 -640 {lab=#net8}
+N -1020 -640 -1020 -590 {lab=#net8}
+N -850 -800 -850 -640 {lab=#net8}
+N -850 -800 -840 -800 {lab=#net8}
+N -1295 -690 -1295 -490 {lab=#net4}
+N -1175 -285 -1060 -285 {lab=#net4}
+N -1060 -290 -1060 -285 {lab=#net4}
+N -1175 -695 -1175 -285 {lab=#net4}
+N -1295 -695 -1175 -695 {lab=#net4}
+N -1295 -695 -1295 -690 {lab=#net4}
+N -1490 -970 -1460 -970 {lab=#net5}
+N -1490 -1060 -1490 -970 {lab=#net5}
+N -1545 -1060 -1490 -1060 {lab=#net5}
+N -1540 -930 -1460 -930 {lab=#net3}
+N -1540 -930 -1540 -690 {lab=#net3}
+N -1545 -690 -1540 -690 {lab=#net3}
+N -1160 -940 -1130 -940 {lab=#net7}
+N -1130 -940 -1130 -850 {lab=#net7}
+N -1160 -1020 -1100 -1020 {lab=#net8}
+N -1100 -1020 -1100 -640 {lab=#net8}
+N -1100 -640 -1020 -640 {lab=#net8}
+C {gnd.sym} -2235 -1360 0 0 {name=l3 lab=0}
+C {vsource.sym} -2525 -1140 0 0 {name=V3 value="sin(2 0.01 10k)" savecurrent=false}
+C {lab_pin.sym} -2525 -1170 2 0 {name=p7 sig_type=std_logic lab=TGIP
+}
+C {lab_pin.sym} -2335 -1180 0 0 {name=p8 sig_type=std_logic lab=TGIP
+}
+C {code_shown.sym} -2805 -1530 0 0 {name=sim only_toplevel=false value="
+.temp 85
+.model sw sw(vt=1.65 ron=0.01 roff=10G)
+
+.control
+save all
+tran 10n 30u
+write Differential_SC_AMplifier_tgswitch.raw
+let vdiffout=v(voutp)-v(voutn)
+plot v(voutp) v(voutn)
+plot v(diffout)
+.endc
+.end
+"}
+C {lab_pin.sym} -1755 -855 2 0 {name=p31 sig_type=std_logic lab=opvdd}
+C {code_shown.sym} -3395 -1110 0 0 {name=MODELS only_toplevel=true
+format="tcleval( @value )"
+value="
+.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice res_typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice moscap_typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice diode_typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice cap_mim
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice mimcap_typical
+
+.include /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/spice/gf180mcu_fd_io.spice
+.options rshunt=1e12 reltol=1e-3 abstol=1e-12
+Rout vout cdout 500
+
+"}
+C {lab_pin.sym} -1555 -980 1 0 {name=p38 sig_type=std_logic lab=Vy}
+C {capa.sym} -1765 -1250 1 0 {name=C1
+m=1
+value=500p
+footprint=1206
+device="ceramic capacitor"}
+C {capa.sym} -1415 -1210 1 0 {name=C2
+m=1
+value=1p
+footprint=1206
+device="ceramic capacitor"}
+C {gnd.sym} -1865 -950 0 0 {name=l1 lab=0}
+C {gnd.sym} -1675 -950 0 1 {name=l4 lab=0}
+C {gnd.sym} -2155 -1220 2 1 {name=l5 lab=0}
+C {lab_pin.sym} -1885 -950 0 0 {name=p9 sig_type=std_logic lab=phi2
+}
+C {gnd.sym} -1865 -670 2 0 {name=l2 lab=0}
+C {lab_pin.sym} -1845 -670 2 0 {name=p1 sig_type=std_logic lab=phi2
+}
+C {lab_pin.sym} -1615 -660 2 0 {name=p3 sig_type=std_logic lab=phi1
+}
+C {gnd.sym} -1635 -660 2 0 {name=l8 lab=0}
+C {capa.sym} -1805 -340 1 0 {name=C4
+m=1
+value=500p
+footprint=1206
+device="ceramic capacitor"}
+C {lab_pin.sym} -2365 -230 0 0 {name=p11 sig_type=std_logic lab=TGIN
+}
+C {capa.sym} -1415 -690 1 1 {name=C3
+m=1
+value=1p
+footprint=1206
+device="ceramic capacitor"}
+C {lab_pin.sym} -460 -970 0 1 {name=p19 sig_type=std_logic lab=Voutp
+}
+C {vsource.sym} -2235 -1390 0 0 {name=V1 value="PULSE( 0 1.05 0u 100ns 100ns 2us  5us 10000  ) " savecurrent=false}
+C {lab_pin.sym} -2235 -1420 2 0 {name=p17 sig_type=std_logic lab=phi1
+
+}
+C {gnd.sym} -1915 -1360 0 0 {name=l14 lab=0}
+C {vsource.sym} -1915 -1390 0 0 {name=V2 value="PULSE( 0 1.05 2.50us 100ns 100ns 2us  5us 10000  ) " savecurrent=false}
+C {lab_pin.sym} -1915 -1420 2 0 {name=p18 sig_type=std_logic lab=phi2
+
+}
+C {gnd.sym} -2525 -1110 0 0 {name=l15 lab=0}
+C {vsource.sym} -2545 -1010 0 0 {name=V4 value="sin(-2 0.01 10k)" savecurrent=false}
+C {lab_pin.sym} -2545 -1040 2 0 {name=p6 sig_type=std_logic lab=TGIN
+}
+C {gnd.sym} -2545 -980 0 0 {name=l16 lab=0}
+C {vsource.sym} -2295 -1000 0 0 {name=V5 value=-0.825 savecurrent=false}
+C {lab_pin.sym} -2295 -1030 2 0 {name=p21 sig_type=std_logic lab=opvdd
+}
+C {gnd.sym} -2295 -970 0 0 {name=l17 lab=0}
+C {vsource.sym} -2155 -980 0 0 {name=V6 value=0.825 savecurrent=false}
+C {lab_pin.sym} -2155 -1010 2 0 {name=p22 sig_type=std_logic lab=Vcm
+}
+C {gnd.sym} -2155 -950 0 0 {name=l18 lab=0}
+C {TG.sym} -2155 -1100 0 0 {name=x1}
+C {lab_pin.sym} -2005 -1060 1 1 {name=p25 sig_type=std_logic lab=phi1
+}
+C {gnd.sym} -2005 -1080 3 1 {name=l19 lab=0}
+C {TG.sym} -2255 -320 0 0 {name=x2}
+C {lab_pin.sym} -2105 -280 1 1 {name=p4 sig_type=std_logic lab=phi1
+}
+C {TG.sym} -1845 -1100 1 0 {name=x3}
+C {TG.sym} -1655 -1100 1 0 {name=x4}
+C {lab_pin.sym} -1695 -950 2 1 {name=p12 sig_type=std_logic lab=phi1
+}
+C {TG.sym} -1885 -520 3 0 {name=x5}
+C {TG.sym} -1655 -510 3 0 {name=x6}
+C {gnd.sym} -2105 -300 3 1 {name=l9 lab=0}
+C {inverter.sym} -2385 -740 0 0 {name=x7}
+C {lab_pin.sym} -2535 -760 0 0 {name=p2 sig_type=std_logic lab=phi1
+
+}
+C {lab_pin.sym} -2235 -740 2 0 {name=p26 sig_type=std_logic lab=phi1bar
+
+}
+C {lab_pin.sym} -2005 -1140 2 0 {name=p27 sig_type=std_logic lab=phi1bar
+
+}
+C {lab_pin.sym} -1615 -950 3 0 {name=p28 sig_type=std_logic lab=phi1bar
+
+}
+C {lab_pin.sym} -1695 -660 1 0 {name=p29 sig_type=std_logic lab=phi1bar
+
+}
+C {vsource.sym} -2425 -880 0 0 {name=V7 value=3.3 savecurrent=false}
+C {lab_pin.sym} -2425 -910 2 0 {name=p30 sig_type=std_logic lab=tgvdd
+}
+C {lab_pin.sym} -2235 -760 2 0 {name=p32 sig_type=std_logic lab=tgvdd
+}
+C {gnd.sym} -2425 -850 0 0 {name=l20 lab=0}
+C {gnd.sym} -2235 -720 0 0 {name=l21 lab=0}
+C {lab_pin.sym} -1825 -950 3 0 {name=p33 sig_type=std_logic lab=tgvdd
+}
+C {lab_pin.sym} -1635 -950 3 0 {name=p34 sig_type=std_logic lab=tgvdd
+}
+C {lab_pin.sym} -1905 -670 1 0 {name=p35 sig_type=std_logic lab=tgvdd
+}
+C {lab_pin.sym} -1675 -660 1 0 {name=p36 sig_type=std_logic lab=tgvdd
+}
+C {lab_pin.sym} -2105 -340 2 0 {name=p37 sig_type=std_logic lab=tgvdd
+}
+C {lab_pin.sym} -2005 -1120 2 0 {name=p39 sig_type=std_logic lab=tgvdd
+}
+C {inverter.sym} -2420 -630 0 0 {name=x8}
+C {lab_pin.sym} -2570 -650 0 0 {name=p40 sig_type=std_logic lab=phi2
+
+}
+C {lab_pin.sym} -2270 -630 2 0 {name=p41 sig_type=std_logic lab=phi2bar
+
+}
+C {lab_pin.sym} -2270 -650 2 0 {name=p42 sig_type=std_logic lab=tgvdd
+}
+C {gnd.sym} -2270 -610 0 0 {name=l22 lab=0}
+C {lab_pin.sym} -1805 -950 3 0 {name=p43 sig_type=std_logic lab=phi2bar
+
+}
+C {lab_pin.sym} -1845 -670 1 0 {name=p44 sig_type=std_logic lab=phi2bar
+
+}
+C {lab_pin.sym} -1925 -670 1 0 {name=p45 sig_type=std_logic lab=phi2bar
+
+}
+C {lab_pin.sym} -2105 -360 2 0 {name=p46 sig_type=std_logic lab=phi1bar
+
+}
+C {gnd.sym} -1085 -1490 2 1 {name=l23 lab=0}
+C {TG.sym} -1105 -1340 3 0 {name=x9}
+C {lab_pin.sym} -1065 -1490 0 1 {name=p48 sig_type=std_logic lab=phi1
+}
+C {lab_pin.sym} -1145 -1490 1 0 {name=p49 sig_type=std_logic lab=phi1bar
+
+}
+C {lab_pin.sym} -1125 -1490 1 0 {name=p50 sig_type=std_logic lab=tgvdd
+}
+C {TG.sym} -1335 -345 1 0 {name=x10}
+C {lab_pin.sym} -1375 -195 2 1 {name=p5 sig_type=std_logic lab=phi1
+}
+C {lab_pin.sym} -1295 -195 3 0 {name=p47 sig_type=std_logic lab=phi1bar
+
+}
+C {lab_pin.sym} -1315 -195 3 0 {name=p51 sig_type=std_logic lab=tgvdd
+}
+C {gnd.sym} -1355 -190 0 1 {name=l6 lab=0}
+C {gnd.sym} -530 -960 3 0 {name=l13 lab=0}
+C {lab_pin.sym} -530 -940 3 0 {name=p16 sig_type=std_logic lab=phi2
+}
+C {TG.sym} -680 -980 0 0 {name=x11}
+C {lab_pin.sym} -530 -1000 2 0 {name=p52 sig_type=std_logic lab=tgvdd
+}
+C {lab_pin.sym} -530 -940 2 0 {name=p53 sig_type=std_logic lab=phi2bar
+
+}
+C {lab_pin.sym} -530 -1020 2 0 {name=p54 sig_type=std_logic lab=phi2bar
+
+}
+C {gnd.sym} -540 -740 3 0 {name=l24 lab=0}
+C {lab_pin.sym} -540 -720 3 0 {name=p55 sig_type=std_logic lab=phi2
+}
+C {TG.sym} -690 -760 0 0 {name=x12}
+C {lab_pin.sym} -540 -780 2 0 {name=p56 sig_type=std_logic lab=tgvdd
+}
+C {lab_pin.sym} -540 -720 2 0 {name=p57 sig_type=std_logic lab=phi2bar
+
+}
+C {lab_pin.sym} -540 -800 2 0 {name=p58 sig_type=std_logic lab=phi2bar
+
+}
+C {lab_pin.sym} -470 -750 0 1 {name=p59 sig_type=std_logic lab=Voutn}
+C {gnd.sym} -1045 -900 0 0 {name=l10 lab=0}
+C {lab_pin.sym} -1065 -900 0 0 {name=p15 sig_type=std_logic lab=phi2
+}
+C {TG.sym} -1025 -1050 1 0 {name=x13}
+C {lab_pin.sym} -1005 -900 3 0 {name=p20 sig_type=std_logic lab=tgvdd
+}
+C {lab_pin.sym} -1065 -900 3 0 {name=p60 sig_type=std_logic lab=phi2bar
+
+}
+C {lab_pin.sym} -985 -900 3 0 {name=p61 sig_type=std_logic lab=phi2bar
+
+}
+C {gnd.sym} -1000 -590 2 0 {name=l7 lab=0}
+C {lab_pin.sym} -980 -590 2 0 {name=p10 sig_type=std_logic lab=phi2
+}
+C {TG.sym} -1020 -440 3 0 {name=x14}
+C {lab_pin.sym} -1040 -590 1 0 {name=p13 sig_type=std_logic lab=tgvdd
+}
+C {lab_pin.sym} -980 -590 1 0 {name=p62 sig_type=std_logic lab=phi2bar
+
+}
+C {lab_pin.sym} -1060 -590 1 0 {name=p63 sig_type=std_logic lab=phi2bar
+
+}
+C {/foss/designs/OCCPSense_Capacitive_Pressure_Sensor/xschem/ota/diff_ota_folded_cascode/op-amp_diff.sym} -1310 -980 0 0 {name=x15}
+C {lab_pin.sym} -1460 -990 0 0 {name=p14 sig_type=std_logic lab=Vcm
+}
+C {lab_pin.sym} -1460 -950 0 0 {name=p23 sig_type=std_logic lab=Vcm
+}
